@@ -1,6 +1,6 @@
 # Graph patterns and risk-style interpretation
 
-This document lists common **graph topologies** used in financial forensics and AML-style analysis—often summarized as “patterns in the graph can yield risk insights.” Each pattern is a **structural** signal: useful for triage and explanation, **not** proof of illicit activity on its own.
+This document lists common **graph topologies** used in financial forensics and AML-style analysis. In training and infographics these are often summarized as “patterns in the graph can yield risk insights.” Each pattern is a **structural** signal. It is useful for triage and explanation, but it is **not** on its own proof of illicit activity.
 
 Sources in the literature often tie these shapes to **Anti-Money Laundering** systems and **synthetic transaction** datasets used to train or evaluate detection models.
 
@@ -8,112 +8,77 @@ Sources in the literature often tie these shapes to **Anti-Money Laundering** sy
 
 ## 1. Long hop chains
 
-**Shape:** A long directed path—many nodes in sequence, one following another (often drawn as a winding line).
+A **long hop chain** is a long directed path: many nodes in sequence, one following another, often drawn as a winding line. In AML discussions this shape is associated with **layering**, moving funds through many intermediaries to obscure origin. The **length** of the path (hop count) is the main signal.
 
-**Interpretation (AML context):** Associated with **layering**: moving funds through many intermediaries to obscure origin. The **length** of the path (hop count) is the main signal.
-
-**Transaction-ID graph (`txid` nodes):** **Yes.** An edge **A → B** means *B spends an output of A*. A long path **A → B → C → …** is exactly a **chain of spends**.  
-**Caveat:** Legitimate custody, payments, and wallet behavior also create chains; **length vs. baseline** matters.
+For a **transaction-ID graph** (`txid` nodes), this pattern maps well. An edge **A → B** means that *B spends an output of A*, so a long path **A → B → C → …** is exactly a **chain of spends**. Legitimate custody, payments, and wallet behavior also create chains, so **length relative to a baseline** matters.
 
 ---
 
 ## 2. Fan-out
 
-**Shape:** One source node with many outgoing edges to distinct recipients.
+**Fan-out** means one source node with many outgoing edges to distinct recipients. It is often discussed next to **structuring** or **smurfing**: splitting flow into many branches, whether many destinations or many small outputs.
 
-**Interpretation:** Often discussed alongside **structuring** or **smurfing**: splitting flow into many branches (many destinations or many small outputs).
-
-**Transaction-ID graph:** **Yes**, in two senses:
-- **One transaction → many child transactions:** many outputs of **Tx S** are spent by **different** next transactions (high out-degree from **S** in the spend graph).
-- **One transaction with many outputs** (value split) even before the next hop—visible as **fan-out** at the **tx** level.
-
-**Caveat:** Batch payouts, mining pool rewards, and change-heavy transactions can look like fan-out.
+On the **transaction-ID graph** the idea applies in two ways. First, **one transaction → many child transactions**: many outputs of **Tx S** may be spent by **different** next transactions (high out-degree from **S** in the spend graph). Second, **one transaction with many outputs** (value split) can show **fan-out** at the **tx** level even before the next hop. Batch payouts, mining pool rewards, and change-heavy transactions can look like fan-out, so context matters.
 
 ---
 
 ## 3. Fan-in
 
-**Shape:** Many nodes pointing **into** one destination node.
+**Fan-in** is the opposite shape: many nodes pointing **into** one destination. The usual reading is **consolidation**, many sources feeding one sink.
 
-**Interpretation:** **Consolidation**: many sources feeding one sink (gathering funds).
-
-**Transaction-ID graph:** **Yes.** One **Tx T** with **many distinct input transactions** (many parents in the spend graph) is **fan-in** to **T**.
-
-**Caveat:** Exchange deposits and wallet sweeps consolidate many inputs; **high fan-in** is common at service hubs.
+On the **transaction-ID graph**, one **Tx T** with **many distinct input transactions** (many parents in the spend graph) is **fan-in** to **T**. Exchange deposits and wallet sweeps consolidate many inputs, so **high fan-in** is common at service hubs.
 
 ---
 
-## 4. Gather–scatter (hourglass / bowtie)
+## 4. Gather-scatter (hourglass / bowtie)
 
-**Shape:** Multiple nodes on the left → one **central hub** → multiple nodes on the right (many-to-one-to-many).
+**Gather-scatter** looks like multiple nodes on the left, one **central hub**, then multiple nodes on the right: many-to-one-to-many. It suggests **pass-through** or **mule-like** behavior: aggregate in, then redistribute out.
 
-**Interpretation:** **Pass-through** or **mule-like** behavior: aggregate in, then redistribute out (sometimes described as gather-scatter around a hub).
-
-**Transaction-ID graph:** **Yes**, if the **hub is a transaction** (or a small set of txs): many parents → **Tx H** → many children.  
-**Caveat:** Payment processors and mixers can mimic **hub** shapes; **context** (amounts, timing, known entities) matters.
+If the **hub is a transaction** (or a small set of txs), the pattern fits the **transaction-ID graph**: many parents → **Tx H** → many children. Payment processors and mixers can mimic **hub** shapes, so **context** (amounts, timing, known entities) matters.
 
 ---
 
-## 5. Scatter–gather
+## 5. Scatter-gather
 
-**Shape:** One or few sources → several **intermediate** nodes → one **final** sink (split, then reconverge).
+**Scatter-gather** is one or few sources → several **intermediate** nodes → one **final** sink: split, then reconverge. It is read as **layered consolidation**, sometimes with intermediate hops to obfuscate the path from sources to sink.
 
-**Interpretation:** **Layered consolidation**: distance from sources to sink with intermediate hops (sometimes to obfuscate).
-
-**Transaction-ID graph:** **Partially / yes** for the **topology** if you see **branching then merging** in the directed spend graph (e.g. diamond-like or multi-path to one sink). Algorithms may need **path enumeration** or **flow** summaries, not only single-parent trees.
-
-**Caveat:** Normal business flows can also branch and merge.
+The **transaction-ID graph** supports this **topology** when you see **branching then merging** in the directed spend graph (for example diamond-like or multi-path routes to one sink). Algorithms may need **path enumeration** or **flow** summaries, not only single-parent trees. Normal business flows can also branch and merge.
 
 ---
 
 ## 6. Cycles (closed loops)
 
-**Shape:** Directed edges that form a **closed loop** (A → B → … → A).
+A **cycle** is a set of directed edges that form a **closed loop** (A → B → … → A). In AML material this is tied to **round-tripping** or **wash trading**: funds move in a circuit so the path returns toward a familiar origin.
 
-**Interpretation (AML context):** **Round-tripping** or **wash trading**: funds moving in a circuit so the path returns to a familiar origin.
+For the **Bitcoin UTXO spend graph** with **tx → tx** edges, you do **not** get a true directed cycle in the strict sense. Spending moves **forward in time**: a transaction only spends **existing** outputs, so the spend graph is a **DAG**. You **cannot** have **A → … → A** along transaction nodes alone.
 
-**Transaction-ID graph (Bitcoin UTXO spend graph):** **No — not as a true cycle.**  
-Spending is **forward in time**: a transaction only spends **existing** outputs. The graph of **tx → tx** (spend edges) is a **DAG** (no directed cycles). You **cannot** have **A → … → A** in the strict sense.
+Cycles **can** appear on an **address** or **entity** graph: if **address A** pays **B** in one tx and later **B** pays **A** in another, you can see a **directed cycle** in **address-to-address** flows across different transactions. Behavioral “cycles” are usually modeled with **addresses** or **clusters**, not raw `txid` DAGs.
 
-**Where cycles *can* appear:**
-- **Address graph** (or **entity** graph): if **address A** pays **B** in one tx and later **B** pays **A** in another, you can get a **directed cycle** in **address ↔ address** flows (different transactions).
-- **Temporal** “cycle” in behavior (same entity, multiple hops) is often modeled with **addresses** or **clusters**, not raw `txid` DAGs.
-
-**Summary:** **Cycles** in the infographic are **natural** for **account/address**-style graphs; **not** for pure **transaction DAG** semantics on Bitcoin.
+In short, **cycles** in the infographic are natural for **account/address**-style graphs; they are **not** what you get from pure **transaction DAG** semantics on Bitcoin.
 
 ---
 
 ## 7. Random (unstructured)
 
-**Shape:** Sparse edges, no strong motif—no long path, no hub, no obvious fan-in/out.
+The **random** or unstructured case has sparse edges and no strong motif: no long path, no hub, no obvious fan-in or fan-out. It serves as a **baseline** or “typical” activity class, a **control** or comparison when you build or evaluate detectors.
 
-**Interpretation:** **Baseline** or “typical” activity: used as a **control** or comparison class when building or evaluating detectors.
-
-**Transaction-ID graph:** **Yes** as a **reference distribution**: compare **path length**, **degree**, **hub participation** in a window to **typical** subgraphs.
+On the **transaction-ID graph** you can use it as a **reference distribution**: compare **path length**, **degree**, and **hub participation** in a window to **typical** subgraphs in the same setting.
 
 ---
 
 ## 8. Bipartite-like structure
 
-**Shape:** Two groups of nodes; edges only **between** groups, not **within** a group (two-sided matching).
+A **bipartite-like** shape has two groups of nodes; edges run **between** groups, not **within** a group (two-sided matching). It is sometimes linked to **coordinated** or **two-sided** patterns, for example one class of entities interacting mainly with another class.
 
-**Interpretation:** Sometimes associated with **coordinated** or **two-sided** patterns (e.g. one class of entities interacting only with another class).
-
-**Transaction-ID graph:** **Awkward.** Transactions are **not** naturally partitioned into two “sides” without **extra labels** (counterparty type, cluster, service tag).  
-**Better:** **Address–address** or **entity–entity** graphs with **metadata**, or **bipartite** **user ↔ merchant** if you have off-chain labels.
-
-**Summary:** **Possible** with heavy **enrichment**; **not** the default on raw `txid` graphs alone.
+Raw **transaction** nodes do **not** split cleanly into two “sides” without **extra labels** (counterparty type, cluster, service tag). **Address-to-address** or **entity-to-entity** graphs with **metadata**, or **bipartite** **user ↔ merchant** models when you have off-chain labels, are usually a better fit. The pattern is **possible** with heavy **enrichment**; it is **not** the default on raw `txid` graphs alone.
 
 ---
 
 ## 9. Stack (layered mesh)
 
-**Shape:** Multiple **layers** (rows) of nodes; dense flow left-to-right through several tiers; **sandwich** or **stacked** appearance.
+A **stack** shows multiple **layers** (rows) of nodes, dense flow left-to-right through several tiers, a **sandwich** or **stacked** look. It suggests **organized layering** at scale: systematic routing through successive tiers, sometimes tied to complex laundering typologies in training materials.
 
-**Interpretation:** **Organized layering** at scale: systematic routing through successive tiers (sometimes associated with complex laundering typologies in training materials).
-
-**Transaction-ID graph:** **Partially.** You can see **multi-layer** **forward** flow (tiers of **tx**), but **dense** “mesh” often requires **many parallel paths**—detectable with **layered** **path** or **flow** metrics, **k-core**-style analysis, or **betweenness** on **subgraphs** (can be heavy).  
-**Caveat:** Busy exchange or settlement periods also create **dense** graphs—**contrast** with **random** baseline.
+On the **transaction-ID graph** you can see **multi-layer** **forward** flow (tiers of **tx**). A **dense** “mesh” often implies **many parallel paths**. That structure can be studied with **layered** **path** or **flow** metrics, **k-core**-style analysis, or **betweenness** on **subgraphs** (which can be heavy). Busy exchange or settlement periods also create **dense** graphs, so **contrast** with a **random** baseline.
 
 ---
 
@@ -124,8 +89,8 @@ Spending is **forward in time**: a transaction only spends **existing** outputs.
 | Long hop chains | **Yes** | Directed path length in the spend graph. |
 | Fan-out | **Yes** | Many children from one tx / many outputs spent separately. |
 | Fan-in | **Yes** | Many parents into one tx. |
-| Gather–scatter | **Yes** | Hub as a **transaction** (many→one→many). |
-| Scatter–gather | **Mostly** | Branch/merge topology; may need path-level or flow summaries. |
+| Gather-scatter | **Yes** | Hub as a **transaction** (many→one→many). |
+| Scatter-gather | **Mostly** | Branch/merge topology; may need path-level or flow summaries. |
 | Cycles | **No** (strict DAG) | Use **address/entity** graphs or off-chain identity for **round-trip** loops. |
 | Random baseline | **Yes** | Compare metrics to distribution in the same window. |
 | Bipartite | **Rarely** (raw) | Needs **labels** or **address/entity** modeling. |
@@ -135,12 +100,16 @@ Spending is **forward in time**: a transaction only spends **existing** outputs.
 
 ## Practical takeaway for BlockGraph
 
-- **Primary graph:** **transactions** as nodes, **spends** as directed edges—strongly supports **chains**, **fan-in**, **fan-out**, **gather–scatter**, and **scatter–gather** (with caveats).
-- **Do not** expect **directed cycles** on raw **Bitcoin** **tx→tx** graphs; treat **cycles** as **address/entity**-level or **off-chain** concepts unless you change the graph definition.
-- Always document: **structural** ≠ **illicit**; exchanges, mixers, and normal commerce create **similar shapes**.
+The **primary** BlockGraph view uses **transactions** as nodes and **spends** as directed edges. That representation strongly supports **chains**, **fan-in**, **fan-out**, **gather-scatter**, and **scatter-gather**, subject to the caveats above.
+
+You should **not** expect **directed cycles** on raw **Bitcoin** **tx→tx** graphs. Treat **cycles** as **address/entity**-level or **off-chain** ideas unless you change the graph definition.
+
+Always document that **structural** similarity is not the same as **illicit** intent: exchanges, mixers, and ordinary commerce create **similar shapes**.
 
 ---
 
 ## References (context)
 
-Patterns are often discussed in the context of **AML systems** and **synthetic financial transaction** datasets used to train or benchmark models. Exact citations depend on your course materials; the infographic title is: *“Patterns in the graph can yield risk insights.”*
+Patterns are often discussed in the context of **AML systems** and **synthetic financial transaction** datasets used to train or benchmark models. Exact citations depend on your course materials. The infographic title is *“Patterns in the graph can yield risk insights.”*
+
+[YouTube](https://www.youtube.com/watch?v=szLUNcUwbVE&t=352s) (relevant segment from about 5:52).
