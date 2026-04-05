@@ -59,11 +59,27 @@ type IngestError struct {
 	Err    error
 }
 
+// BlockHandler runs after a block is fetched successfully, in the same worker
+// goroutine that performed the fetch. Many blocks run this concurrently (up to
+// cfg.Workers). Use for subgraph / feature extraction per block without waiting
+// for the full window to finish downloading.
+//
+// The argument is a pointer so the call does not copy the FetchedBlock value
+// (transaction payloads live in heap-allocated slice backing arrays in any case).
+type BlockHandler func(ctx context.Context, fb *FetchedBlock) error
+
 // Run builds the block height queue from the current tip and Config, then runs a
 // worker pool: each worker pops the next height, resolves hash, and loads the full
 // block (including all transactions in JSON form). Transaction parsing / graph
 // edges are not implemented here — they live in each Block.Tx slice on the result.
 func Run(ctx context.Context, c *Client, cfg Config) (*IngestResult, error) {
+	return RunWithHandler(ctx, c, cfg, nil)
+}
+
+// RunWithHandler is like Run but invokes handler for each successfully fetched
+// block immediately after the HTTP fetch completes, before moving to the next job
+// in that worker. Handlers for different blocks run in parallel across workers.
+func RunWithHandler(ctx context.Context, c *Client, cfg Config, handler BlockHandler) (*IngestResult, error) {
 	if cfg.Workers < 1 {
 		return nil, fmt.Errorf("workers must be >= 1, got %d", cfg.Workers)
 	}
@@ -88,6 +104,9 @@ func Run(ctx context.Context, c *Client, cfg Config) (*IngestResult, error) {
 		go func() {
 			defer wg.Done()
 			for height := range jobs {
+				if ctx.Err() != nil {
+					return
+				}
 				hash, err := c.BlockHashAtHeight(ctx, height)
 				if err != nil {
 					mu.Lock()
@@ -102,9 +121,17 @@ func Run(ctx context.Context, c *Client, cfg Config) (*IngestResult, error) {
 					mu.Unlock()
 					continue
 				}
+				fb := FetchedBlock{Height: height, Block: blk}
 				mu.Lock()
-				byHeight[height] = FetchedBlock{Height: height, Block: blk}
+				byHeight[height] = fb
 				mu.Unlock()
+				if handler != nil {
+					if hErr := handler(ctx, &fb); hErr != nil {
+						mu.Lock()
+						errs = append(errs, IngestError{Height: height, Err: hErr})
+						mu.Unlock()
+					}
+				}
 			}
 		}()
 	}

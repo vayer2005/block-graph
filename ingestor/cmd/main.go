@@ -7,8 +7,6 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"sort"
-	"sync"
 	"time"
 
 	"graph-fraud/ingestor"
@@ -16,10 +14,6 @@ import (
 )
 
 func main() {
-
-	//TODO: Restructure so that graph features are concurrently running with the ingestion
-	//Right now HTTP requests are sent and only once all blocks are fetched, the graph features are started
-	
 	blocks := flag.Int("blocks", 3, "number of recent confirmed blocks to fetch (from chain tip)")
 	workers := flag.Int("workers", 4, "parallel worker goroutines")
 	timeout := flag.Duration("timeout", 5*time.Minute, "overall deadline for the run")
@@ -39,10 +33,10 @@ func main() {
 
 	c := ingestor.NewClient()
 
-	res, err := ingestor.Run(ctx, c, ingestor.Config{
+	res, err := ingestor.RunWithHandler(ctx, c, ingestor.Config{
 		BlockCount: *blocks,
 		Workers:    *workers,
-	})
+	}, features.ProcessBlock)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
@@ -57,29 +51,4 @@ func main() {
 	} else {
 		fmt.Println()
 	}
-	heights := make([]int, 0, len(res.ByHeight))
-	for h := range res.ByHeight {
-		heights = append(heights, h)
-	}
-	sort.Ints(heights)
-
-	// Heights only on the channel
-	blockCh := make(chan int)
-	var wg sync.WaitGroup
-	wg.Add(1)
-	go func() {
-		defer wg.Done()
-		features.SubscribeBlocks(ctx, blockCh, res)
-	}()
-
-sendLoop:
-	for _, h := range heights {
-		select {
-		case <-ctx.Done():
-			break sendLoop
-		case blockCh <- h:
-		}
-	}
-	close(blockCh)
-	wg.Wait()
 }
