@@ -9,12 +9,16 @@ import (
 	"os"
 	"time"
 
+	"github.com/joho/godotenv"
+
 	"graph-fraud/ingestor"
 	"graph-fraud/ingestor/anomaly"
 	"graph-fraud/ingestor/features"
 )
 
 func main() {
+	// Load repo-root .env when present (run from project root: go run ./ingestor/cmd/).
+	_ = godotenv.Load()
 
 	time_begin := time.Now()
 	blocks := flag.Int("blocks", 15, "number of recent confirmed blocks to fetch (from chain tip)")
@@ -24,6 +28,7 @@ func main() {
 	anomalyMetrics := flag.String("anomaly-metrics-json", "", "anomaly: optional path for full per-txid metrics JSON")
 	anomalyMaxStar := flag.Int("anomaly-max-star-edges", 0, "anomaly: max edges for fan_in/fan_out/gather_scatter subgraphs (0=64, -1=unlimited)")
 	anomalyQuiet := flag.Bool("anomaly-quiet", false, "anomaly: suppress text summary on stdout")
+	databaseURL := flag.String("database-url", os.Getenv("DATABASE_URL"), "postgres DSN for block cache (empty disables cache; env DATABASE_URL)")
 	flag.Parse()
 
 	if *blocks < 1 {
@@ -40,12 +45,24 @@ func main() {
 
 	c := ingestor.NewClient()
 
+	var blockCache *ingestor.PostgresBlockCache
+	if *databaseURL != "" {
+		var cerr error
+		blockCache, cerr = ingestor.NewPostgresBlockCache(ctx, *databaseURL)
+		if cerr != nil {
+			fmt.Fprintln(os.Stderr, "postgres block cache:", cerr)
+			os.Exit(1)
+		}
+		defer blockCache.Close()
+	}
+
 	// Merge coordinator must run before ingest so subgraph ids are consumed from the queue.
 	features.StartMergeCoordinator(ctx, 15)
 
 	res, err := ingestor.RunWithHandler(ctx, c, ingestor.Config{
 		BlockCount: *blocks,
 		Workers:    *workers,
+		BlockCache: blockCache,
 	}, features.ProcessBlock)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)

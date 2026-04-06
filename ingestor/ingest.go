@@ -12,6 +12,10 @@ type Config struct {
 	BlockCount int
 	// Workers is the number of concurrent block fetches (goroutines).
 	Workers int
+	// BlockCache is optional. When set, each height is resolved by hash from the API; if the
+	// cache holds a row for that height with the same hash, the cached block body is used.
+	// Otherwise the block is fetched from the API and stored. Nil disables caching.
+	BlockCache *PostgresBlockCache
 }
 
 // PlanQueue computes the ordered list of block heights to query: from
@@ -115,12 +119,37 @@ func RunWithHandler(ctx context.Context, c *Client, cfg Config, handler BlockHan
 					mu.Unlock()
 					continue
 				}
-				blk, err := c.BlockByHash(ctx, hash)
-				if err != nil {
-					mu.Lock()
-					errs = append(errs, IngestError{Height: height, Err: err})
-					mu.Unlock()
-					continue
+				var blk Block
+				useCache := false
+				if cfg.BlockCache != nil {
+					storedHash, cached, ok, gerr := cfg.BlockCache.Get(ctx, height)
+					if gerr != nil {
+						mu.Lock()
+						errs = append(errs, IngestError{Height: height, Err: gerr})
+						mu.Unlock()
+						continue
+					}
+					if ok && storedHash == hash {
+						blk = cached
+						useCache = true
+					}
+				}
+				if !useCache {
+					blk, err = c.BlockByHash(ctx, hash)
+					if err != nil {
+						mu.Lock()
+						errs = append(errs, IngestError{Height: height, Err: err})
+						mu.Unlock()
+						continue
+					}
+					if cfg.BlockCache != nil {
+						if perr := cfg.BlockCache.Put(ctx, height, hash, blk); perr != nil {
+							mu.Lock()
+							errs = append(errs, IngestError{Height: height, Err: perr})
+							mu.Unlock()
+							continue
+						}
+					}
 				}
 				fb := FetchedBlock{Height: height, Block: blk}
 				mu.Lock()

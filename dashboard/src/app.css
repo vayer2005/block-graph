@@ -136,3 +136,63 @@ h1 {
   height: min(42vh, 360px);
   min-height: 260px;
 }
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(12, 12, 16, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.loading-card {
+  max-width: 22rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 12px;
+  background: #25252c;
+  border: 1px solid #3a3a48;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+.loading-spinner {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  border: 3px solid #3a3a48;
+  border-top-color: #7ec8e0;
+  animation: loading-spin 0.85s linear infinite;
+}
+
+@keyframes loading-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.loading-sub {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #a0a0a8;
+}
+
+.loading-sub code {
+  font-size: 0.78rem;
+  color: #c8c8d0;
+}
+
+.error-text {
+  color: #e89898;
+}
