@@ -14,8 +14,10 @@ import (
 )
 
 func main() {
-	blocks := flag.Int("blocks", 3, "number of recent confirmed blocks to fetch (from chain tip)")
-	workers := flag.Int("workers", 4, "parallel worker goroutines")
+
+	time_begin := time.Now()
+	blocks := flag.Int("blocks", 20, "number of recent confirmed blocks to fetch (from chain tip)")
+	workers := flag.Int("workers", 15, "parallel worker goroutines")
 	timeout := flag.Duration("timeout", 5*time.Minute, "overall deadline for the run")
 	flag.Parse()
 
@@ -33,6 +35,9 @@ func main() {
 
 	c := ingestor.NewClient()
 
+	// Merge coordinator must run before ingest so subgraph ids are consumed from the queue.
+	features.StartMergeCoordinator(ctx, 15)
+
 	res, err := ingestor.RunWithHandler(ctx, c, ingestor.Config{
 		BlockCount: *blocks,
 		Workers:    *workers,
@@ -40,6 +45,15 @@ func main() {
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
 		os.Exit(1)
+	}
+
+	features.NotifyIngestFinished()
+	if werr := features.WaitMerged(ctx); werr != nil {
+		fmt.Fprintln(os.Stderr, "merge:", werr)
+		os.Exit(1)
+	}
+	if id, g, ok := features.FinalMergedGraph(); ok {
+		fmt.Printf("merged graph id=%d edges=%d\n", id, len(g.Edges))
 	}
 
 	fmt.Printf("fetched %d blocks", len(res.ByHeight))
@@ -51,4 +65,7 @@ func main() {
 	} else {
 		fmt.Println()
 	}
+
+	time_end := time.Now()
+	fmt.Printf("Time taken: %s\n", time_end.Sub(time_begin))
 }

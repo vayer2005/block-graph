@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"strconv"
 	"sync"
 	"sync/atomic"
 
@@ -20,7 +21,7 @@ type TxEdge struct {
 
 // Subgraph holds partial transaction graph fragment (edge list).
 type Subgraph struct {
-	Edges       []TxEdge
+	Edges []TxEdge
 }
 
 const subgraphChanCap = 1024
@@ -78,13 +79,26 @@ func EnqueueSubgraphID(ctx context.Context, id int) error {
 
 const zeroTxid = "0000000000000000000000000000000000000000000000000000000000000000"
 
+// coinbasePrevOutN is the prev_out output index Bitcoin uses for coinbase inputs.
+const coinbasePrevOutN uint64 = 4294967295
+
+type txHead struct {
+	Hash    string `json:"hash"`
+	TxIndex uint64 `json:"tx_index"`
+}
+
+type prevOutWire struct {
+	Hash    string `json:"hash"`
+	Value   int64  `json:"value"`
+	TxIndex uint64 `json:"tx_index"` // global index of the tx that created this output
+	N       uint64 `json:"n"`        // output index within that tx (coinbase uses coinbasePrevOutN)
+}
+
 type txWire struct {
-	Hash   string `json:"hash"`
-	Inputs []struct {
-		PrevOut *struct {
-			Hash  string `json:"hash"`
-			Value int64  `json:"value"` // satoshis (blockchain.info prev_out)
-		} `json:"prev_out"`
+	Hash    string `json:"hash"`
+	TxIndex uint64 `json:"tx_index"`
+	Inputs  []struct {
+		PrevOut *prevOutWire `json:"prev_out"`
 	} `json:"inputs"`
 }
 
@@ -95,7 +109,22 @@ type edgeKey struct {
 
 // buildSubgraph parses block txs into spend edges (funding tx → spending tx).
 // Multiple inputs that map to the same (From, To) pair add their prev_out values into Amount.
+//
+// blockchain.info rawblock txs usually omit prev_out.hash; the spent funding tx is identified by
+// prev_out.tx_index (global). We map tx_index → txid for txs in this block and use decimal
+// tx_index strings for parents not present in the block (cross-block spends).
 func buildSubgraph(fb *ingestor.FetchedBlock) (*Subgraph, error) {
+	txIndexToHash := make(map[uint64]string, len(fb.Block.Tx))
+	for _, raw := range fb.Block.Tx {
+		var head txHead
+		if err := json.Unmarshal(raw, &head); err != nil {
+			return nil, fmt.Errorf("decode tx head: %w", err)
+		}
+		if head.Hash != "" && head.TxIndex != 0 {
+			txIndexToHash[head.TxIndex] = head.Hash
+		}
+	}
+
 	agg := make(map[edgeKey]int64)
 
 	for _, raw := range fb.Block.Tx {
@@ -110,12 +139,25 @@ func buildSubgraph(fb *ingestor.FetchedBlock) (*Subgraph, error) {
 			if in.PrevOut == nil {
 				continue
 			}
-			from := in.PrevOut.Hash
+			po := in.PrevOut
+			if po.N == coinbasePrevOutN {
+				continue
+			}
+			from := po.Hash
 			if from == "" || from == zeroTxid {
+				from = txIndexToHash[po.TxIndex]
+			}
+			if from == "" {
+				if po.TxIndex == 0 {
+					continue
+				}
+				from = strconv.FormatUint(po.TxIndex, 10)
+			}
+			if from == zeroTxid {
 				continue
 			}
 			k := edgeKey{From: from, To: tw.Hash}
-			agg[k] += in.PrevOut.Value
+			agg[k] += po.Value
 		}
 	}
 
@@ -142,6 +184,7 @@ func ProcessBlock(ctx context.Context, fb *ingestor.FetchedBlock) error {
 	id := AllocGraphID()
 
 	SubgraphRegistryMu.Lock()
+	fmt.Printf("Subgraph built for id %d with %d edges\n", id, len(sg.Edges))
 	Subgraphs[id] = sg
 	SubgraphRegistryMu.Unlock()
 
