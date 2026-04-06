@@ -4,7 +4,9 @@ Ingestion pipeline and graph-building experiments for pattern related graph data
 
 ## Sample run
 
-Log(n) merging of 15 bitcoin blocks
+Log(n) merging of 15 bitcoin blocks is intended.
+But blocks are now being merged in a chain manner.
+TODO: Fix this
 
 ### Merge chain
 
