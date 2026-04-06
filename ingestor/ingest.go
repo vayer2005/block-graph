@@ -59,13 +59,12 @@ type IngestError struct {
 	Err    error
 }
 
-// BlockHandler runs after a block is fetched successfully, in the same worker
-// goroutine that performed the fetch. Many blocks run this concurrently (up to
-// cfg.Workers). Use for subgraph / feature extraction per block without waiting
-// for the full window to finish downloading.
+// BlockHandler runs after a block is fetched successfully. Each invocation runs in
+// its own goroutine with a distinct FetchedBlock copy, so many handlers may run
+// concurrently beyond cfg.Workers fetch goroutines.
 //
-// The argument is a pointer so the call does not copy the FetchedBlock value
-// (transaction payloads live in heap-allocated slice backing arrays in any case).
+// The argument is a pointer to that per-invocation copy so the handler does not
+// receive a large struct by value on the call stack.
 type BlockHandler func(ctx context.Context, fb *FetchedBlock) error
 
 // Run builds the block height queue from the current tip and Config, then runs a
@@ -77,8 +76,9 @@ func Run(ctx context.Context, c *Client, cfg Config) (*IngestResult, error) {
 }
 
 // RunWithHandler is like Run but invokes handler for each successfully fetched
-// block immediately after the HTTP fetch completes, before moving to the next job
-// in that worker. Handlers for different blocks run in parallel across workers.
+// block in a separate goroutine (each gets its own FetchedBlock copy). Fetch
+// workers can start the next block while handlers run. RunWithHandler waits until
+// all handler goroutines finish before returning.
 func RunWithHandler(ctx context.Context, c *Client, cfg Config, handler BlockHandler) (*IngestResult, error) {
 	if cfg.Workers < 1 {
 		return nil, fmt.Errorf("workers must be >= 1, got %d", cfg.Workers)
@@ -98,11 +98,12 @@ func RunWithHandler(ctx context.Context, c *Client, cfg Config, handler BlockHan
 	byHeight := make(map[int]FetchedBlock, len(queue))
 	var errs []IngestError
 
-	var wg sync.WaitGroup
+	var fetchWg sync.WaitGroup
+	var handlerWg sync.WaitGroup
 	for i := 0; i < cfg.Workers; i++ {
-		wg.Add(1)
+		fetchWg.Add(1)
 		go func() {
-			defer wg.Done()
+			defer fetchWg.Done()
 			for height := range jobs {
 				if ctx.Err() != nil {
 					return
@@ -126,16 +127,21 @@ func RunWithHandler(ctx context.Context, c *Client, cfg Config, handler BlockHan
 				byHeight[height] = fb
 				mu.Unlock()
 				if handler != nil {
-					if hErr := handler(ctx, &fb); hErr != nil {
-						mu.Lock()
-						errs = append(errs, IngestError{Height: height, Err: hErr})
-						mu.Unlock()
-					}
+					handlerWg.Add(1)
+					go func(f FetchedBlock) {
+						defer handlerWg.Done()
+						if hErr := handler(ctx, &f); hErr != nil {
+							mu.Lock()
+							errs = append(errs, IngestError{Height: f.Height, Err: hErr})
+							mu.Unlock()
+						}
+					}(fb)
 				}
 			}
 		}()
 	}
-	wg.Wait()
+	fetchWg.Wait()
+	handlerWg.Wait()
 
 	return &IngestResult{ByHeight: byHeight, Errors: errs}, nil
 }
