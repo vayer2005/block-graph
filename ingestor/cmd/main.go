@@ -16,7 +16,7 @@ import (
 func main() {
 
 	time_begin := time.Now()
-	blocks := flag.Int("blocks", 20, "number of recent confirmed blocks to fetch (from chain tip)")
+	blocks := flag.Int("blocks", 15, "number of recent confirmed blocks to fetch (from chain tip)")
 	workers := flag.Int("workers", 15, "parallel worker goroutines")
 	timeout := flag.Duration("timeout", 5*time.Minute, "overall deadline for the run")
 	flag.Parse()

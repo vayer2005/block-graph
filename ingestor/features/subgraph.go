@@ -109,10 +109,7 @@ type edgeKey struct {
 
 // buildSubgraph parses block txs into spend edges (funding tx → spending tx).
 // Multiple inputs that map to the same (From, To) pair add their prev_out values into Amount.
-//
-// blockchain.info rawblock txs usually omit prev_out.hash; the spent funding tx is identified by
-// prev_out.tx_index (global). We map tx_index → txid for txs in this block and use decimal
-// tx_index strings for parents not present in the block (cross-block spends).
+
 func buildSubgraph(fb *ingestor.FetchedBlock) (*Subgraph, error) {
 	txIndexToHash := make(map[uint64]string, len(fb.Block.Tx))
 	for _, raw := range fb.Block.Tx {

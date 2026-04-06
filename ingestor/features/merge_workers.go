@@ -241,6 +241,7 @@ func mergePairIDs(ctx context.Context, a, b int) (int, error) {
 
 	numGraphs.Add(-1)
 
+	fmt.Printf("Merged subgraphs %d and %d into %d with %d edges\n", a, b, newID, len(merged.Edges))
 	select {
 	case wakeCoordinator <- struct{}{}:
 	default:
