@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"graph-fraud/ingestor"
+	"graph-fraud/ingestor/anomaly"
 	"graph-fraud/ingestor/features"
 )
 
@@ -19,6 +20,10 @@ func main() {
 	blocks := flag.Int("blocks", 15, "number of recent confirmed blocks to fetch (from chain tip)")
 	workers := flag.Int("workers", 15, "parallel worker goroutines")
 	timeout := flag.Duration("timeout", 5*time.Minute, "overall deadline for the run")
+	anomalyDash := flag.String("anomaly-json", "anomaly-dashboard.json", "anomaly: write top-1 dashboard JSON (empty disables)")
+	anomalyMetrics := flag.String("anomaly-metrics-json", "", "anomaly: optional path for full per-txid metrics JSON")
+	anomalyMaxStar := flag.Int("anomaly-max-star-edges", 0, "anomaly: max edges for fan_in/fan_out/gather_scatter subgraphs (0=64, -1=unlimited)")
+	anomalyQuiet := flag.Bool("anomaly-quiet", false, "anomaly: suppress text summary on stdout")
 	flag.Parse()
 
 	if *blocks < 1 {
@@ -54,6 +59,21 @@ func main() {
 	}
 	if id, g, ok := features.FinalMergedGraph(); ok {
 		fmt.Printf("merged graph id=%d edges=%d\n", id, len(g.Edges))
+		if err := anomaly.Report(g, anomaly.Options{
+			DashboardJSONPath:  *anomalyDash,
+			AllMetricsJSONPath: *anomalyMetrics,
+			MaxStarEdges:       *anomalyMaxStar,
+			Quiet:              *anomalyQuiet,
+		}); err != nil {
+			fmt.Fprintln(os.Stderr, err)
+			os.Exit(1)
+		}
+		if *anomalyDash != "" {
+			fmt.Printf("anomaly dashboard written to %s\n", *anomalyDash)
+		}
+		if *anomalyMetrics != "" {
+			fmt.Printf("anomaly full metrics written to %s\n", *anomalyMetrics)
+		}
 	}
 
 	fmt.Printf("fetched %d blocks", len(res.ByHeight))

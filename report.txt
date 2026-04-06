@@ -1,0 +1,139 @@
+Subgraph built for id 1 with 532 edges for block height 943930
+Subgraph built for id 2 with 5027 edges for block height 943937
+Merged subgraphs 1 and 2 into 3 with 5559 edges
+Subgraph built for id 4 with 4333 edges for block height 943929
+Merged subgraphs 4 and 3 into 5 with 9892 edges
+Subgraph built for id 6 with 2994 edges for block height 943931
+Merged subgraphs 6 and 5 into 7 with 12886 edges
+Subgraph built for id 8 with 7779 edges for block height 943934
+Merged subgraphs 8 and 7 into 9 with 20665 edges
+Subgraph built for id 10 with 6959 edges for block height 943938
+Merged subgraphs 10 and 9 into 11 with 27624 edges
+Subgraph built for id 12 with 7503 edges for block height 943935
+Merged subgraphs 12 and 11 into 13 with 35127 edges
+Subgraph built for id 14 with 7308 edges for block height 943933
+Merged subgraphs 14 and 13 into 15 with 42435 edges
+Subgraph built for id 16 with 7050 edges for block height 943942
+Merged subgraphs 16 and 15 into 17 with 49485 edges
+Subgraph built for id 18 with 6851 edges for block height 943928
+Merged subgraphs 18 and 17 into 19 with 56336 edges
+Subgraph built for id 20 with 6760 edges for block height 943939
+Merged subgraphs 20 and 19 into 21 with 63096 edges
+Subgraph built for id 22 with 7667 edges for block height 943940
+Merged subgraphs 22 and 21 into 23 with 70763 edges
+Subgraph built for id 24 with 8020 edges for block height 943941
+Merged subgraphs 24 and 23 into 25 with 78783 edges
+Subgraph built for id 26 with 8080 edges for block height 943936
+Merged subgraphs 26 and 25 into 27 with 86863 edges
+Subgraph built for id 28 with 7160 edges for block height 943932
+Merged subgraphs 28 and 27 into 29 with 94023 edges
+merged graph id=29 edges=94023
+anomaly: nodes=109966 edges=94023 dag=true longest_path_edges=25
+anomaly: percentile=95.0 thresholds fan_in>=2 fan_out>=2 hub>=1 chain>=15
+anomaly: top fan_in (consolidation) (by degree/metric):
+  afb32fa34912a7a76899f1360796b39b47be42caac1659b295dbd28f2add364a fan_in=1094 fan_out=0 hub=0 path_end=2
+  e6acf909498e54eac958687fd156371de5a605b1171764a1bdb99b60e682b0ba fan_in=490 fan_out=0 hub=0 path_end=1
+  50dc303d0f13ba3a315714e6ea38cdddc85dce505dcfda5a5ee32066e5e7b7ad fan_in=367 fan_out=0 hub=0 path_end=1
+  12db2596d27893cdb4835d8c6312d7feb1ec0851fb38e04af31cd769de078718 fan_in=355 fan_out=0 hub=0 path_end=1
+  d5cfe43e9e97cc90b09c430ada423bb1af79404a2d1baf0d5a476a1c8acee38a fan_in=314 fan_out=0 hub=0 path_end=1
+  878c8e072f81b96b0abbf93f33bdb611b6a34f114d9bbb510c1baaae33670eab fan_in=284 fan_out=0 hub=0 path_end=1
+  f345548ad29b1ef6815f5c7406a53cde792a25212a948db54f7915969a9c9902 fan_in=277 fan_out=0 hub=0 path_end=1
+  b5908040c35bfb922b506834b937da1609ccf74e12191cf893ddb5806441677f fan_in=251 fan_out=0 hub=0 path_end=1
+  960d2fb8fcdfb9e8757fecff2eb9157281f56371f4327b76a46ea3477e68ed31 fan_in=247 fan_out=1 hub=247 path_end=1
+  3b1a97c7dd54b73bf467378188fbfe63687e20d11249d6dc198073ee1926bd42 fan_in=239 fan_out=0 hub=0 path_end=1
+  414151fcc7bf2cecf0a2b692e26dff182578aee7a73619e37884f716524ff57e fan_in=224 fan_out=0 hub=0 path_end=1
+  466e8ae415e2e7959280b713507799cc78c13accddab00f9622290993381d4fd fan_in=224 fan_out=0 hub=0 path_end=1
+  81dbf4c8a44b602f46d451df16ba203924a590d35b40239a2036adef7cb72f6a fan_in=222 fan_out=0 hub=0 path_end=1
+  6eaaee6971794a98054f75e569fb2625ebafcfd0e8fb668402fed039e1e363c0 fan_in=208 fan_out=0 hub=0 path_end=1
+  03700c9d6acfe2a0d7aaea7b0c64899bc2a21806307b88dca7c94f38077fddfd fan_in=200 fan_out=0 hub=0 path_end=1
+  289cf22b550deed481377323a979ba98eace29cfdd17a45cc2c5a422b02e5b0c fan_in=200 fan_out=0 hub=0 path_end=1
+  5eb98fd8cec80f17a6a424c8fbe819a755826357ef0a4678a7405fd7af2bf50c fan_in=200 fan_out=0 hub=0 path_end=1
+  7f5ccb6af202e7e8e1855773676b3beb4ec3bdf82f4d24b63a5810130b46a809 fan_in=200 fan_out=0 hub=0 path_end=1
+  983854edba2661602ff6c47fba664d8832c73f809260344754f6944ec36a0d42 fan_in=200 fan_out=0 hub=0 path_end=1
+  a67f7176f3bc1cf737d2c1d360f917c02730ba902e406b67dd265686d87b1aa1 fan_in=200 fan_out=0 hub=0 path_end=1
+anomaly: top fan_out (distribution) (by degree/metric):
+  7149050347963497 fan_in=0 fan_out=76 hub=0 path_end=0
+  6127015341414735 fan_in=0 fan_out=63 hub=0 path_end=0
+  5345620227614949 fan_in=0 fan_out=57 hub=0 path_end=0
+  2835772133460614 fan_in=0 fan_out=52 hub=0 path_end=0
+  600780148479415 fan_in=0 fan_out=48 hub=0 path_end=0
+  7606361005240593 fan_in=0 fan_out=46 hub=0 path_end=0
+  4334014020712603 fan_in=0 fan_out=42 hub=0 path_end=0
+  2644348128296244 fan_in=0 fan_out=41 hub=0 path_end=0
+  3510196888876119 fan_in=0 fan_out=41 hub=0 path_end=0
+  4714882086269866 fan_in=0 fan_out=41 hub=0 path_end=0
+  1276783797529566 fan_in=0 fan_out=40 hub=0 path_end=0
+  320952167977835 fan_in=0 fan_out=40 hub=0 path_end=0
+  679195852815421 fan_in=0 fan_out=40 hub=0 path_end=0
+  7319257954994017 fan_in=0 fan_out=40 hub=0 path_end=0
+  3626988326490110 fan_in=0 fan_out=39 hub=0 path_end=0
+  483375686885767 fan_in=0 fan_out=39 hub=0 path_end=0
+  7010629616686830 fan_in=0 fan_out=39 hub=0 path_end=0
+  3654580333190793 fan_in=0 fan_out=38 hub=0 path_end=0
+  5179242444959952 fan_in=0 fan_out=38 hub=0 path_end=0
+  6822140387115445 fan_in=0 fan_out=37 hub=0 path_end=0
+anomaly: top hub_score (gather-scatter proxy):
+  960d2fb8fcdfb9e8757fecff2eb9157281f56371f4327b76a46ea3477e68ed31 fan_in=247 fan_out=1 hub=247 path_end=1
+  0a3f4f402a54e35a26974dc6356b1752854ab518f533b8c72e431ce2836b041b fan_in=142 fan_out=1 hub=142 path_end=1
+  4702dcaebef54153cde6efe82c5330d304608fad92f8d53b3f1eca309ddca2ca fan_in=134 fan_out=1 hub=134 path_end=1
+  b8634b444ea801780d33d029cd3460fa3873cd1bb542ad1e6561efc4e894877b fan_in=129 fan_out=1 hub=129 path_end=1
+  29d4429586acda7be5f8787296b2741816927df7effee088a4f0940b00b6fafd fan_in=57 fan_out=2 hub=114 path_end=1
+  7cc1c53ee6b3ec86ed8166fb4dd4001f69d2c0741dd4375a117f71b15b870d10 fan_in=47 fan_out=2 hub=94 path_end=1
+  491995e0aad0d5884196b1ad7ec30a36146bc08a8cc37ffd093139bd60baa2e3 fan_in=87 fan_out=1 hub=87 path_end=1
+  79e7b3c02a49c21d0993faa4a2808e0291e2ef9ad0f1736d1f023ea3a1c1ec80 fan_in=87 fan_out=1 hub=87 path_end=1
+  4a73f92cf825b3e9f43dcb2a3e5776692f9f8ab05dce2f449ccc35c3c3004487 fan_in=86 fan_out=1 hub=86 path_end=1
+  344403548ae5a5e5cf6675a8f24c445aa9e644d744f75844a90089291b289382 fan_in=78 fan_out=1 hub=78 path_end=1
+  ea3b418adbf3eb97476b4b2fa0941e37487cafd445f92bc2def489a5556f7039 fan_in=39 fan_out=2 hub=78 path_end=1
+  c5249d04629940b9675f12973b4a34a22972798552d15de97d42635e3cbceac8 fan_in=53 fan_out=1 hub=53 path_end=1
+  6c32abe0d1bd026a57de22e1658ab93b837277ca8e365b40e76562a5f29761c4 fan_in=39 fan_out=1 hub=39 path_end=1
+  872aa705cd9791f6a633dbf08a2cee4e47dc64bed55888f510b21d47ebcb14ec fan_in=39 fan_out=1 hub=39 path_end=1
+  ae8a03372234199d0a43e0a2697c1bac4cba3db9f8e481539221ef1e16f58420 fan_in=15 fan_out=2 hub=30 path_end=1
+  d54423f627b1d029fac7e014e0b8a2e79eb44b46b76c4bb116426da548858a5a fan_in=3 fan_out=9 hub=27 path_end=1
+  225728545d44ff5809272ba48f46ca2e00477a38e9e76a6d2c7acbabd0c1a41e fan_in=1 fan_out=24 hub=24 path_end=1
+  54184843a8ed996da2c57e6eed8829f5d75e04370ccb4e614c50b50e01cc746b fan_in=3 fan_out=8 hub=24 path_end=1
+  6e1eadc2b0de4cc6604b6d57b711cc2d32e0bdcbaf6e9d41a14823c6f32f30cb fan_in=1 fan_out=24 hub=24 path_end=1
+  e0023d45e4606e6c5ffb92d6fecae63b6c467e3e19e0fa3e990a38b1f34e5010 fan_in=24 fan_out=1 hub=24 path_end=1
+anomaly: top longest_path_ending (chain depth) (by degree/metric):
+  000000433f272ad69d54cb2ac946a609f8deb8f16e624cc4328d68d93b5c6b2d fan_in=1 fan_out=0 hub=0 path_end=25
+  000000eca74783465e264e9d7ace989923d953667955bca52605d9446bc7b7e7 fan_in=1 fan_out=0 hub=0 path_end=25
+  00126ab378ee7b8e94077230ca5aaf5618c16ff9d944ba35c3c5a219248d2644 fan_in=1 fan_out=0 hub=0 path_end=25
+  00d65376914ed689fe77fbb041a30191bc8afbfd74604065c2736d854cbcf694 fan_in=1 fan_out=0 hub=0 path_end=25
+  01f5f78f63152ddbbcf245c8956a28630fcb1142e7e1ad8873b0763e844c2e41 fan_in=1 fan_out=0 hub=0 path_end=25
+  0346f67321547c8a8a923e87884f53263ae7aa6d06407710f6daf171fdc6beaa fan_in=1 fan_out=0 hub=0 path_end=25
+  036d6f6c0b094314f10682c381ec3359a93bb54d2a3b487296a84d8ebedf6538 fan_in=1 fan_out=0 hub=0 path_end=25
+  041dd8d5f9667036c603c8c8efd29d6384db2059b6e83b4a4ce88f822f2adc50 fan_in=1 fan_out=0 hub=0 path_end=25
+  0448de1c091f899cab05895b3adf6df949541255b0ed5db7c98821a3256c7adc fan_in=1 fan_out=0 hub=0 path_end=25
+  04a1e357d02554cf6b72be4013a9257b6a28b9f7817daeb83a598d8ca0e012e4 fan_in=1 fan_out=0 hub=0 path_end=25
+  0539eec3d3218803a989df55fc70c72c72aff73f4582f8ac54deab6d988cd098 fan_in=1 fan_out=0 hub=0 path_end=25
+  053b0a1c205097f3e63113eb34d42b462c483e08537e21e475cce498d3a688d9 fan_in=1 fan_out=0 hub=0 path_end=25
+  061a79e8b3f9c3ee9cebcfc58c94b2bd67313632a5eafd1cbf7a21558e0ee75a fan_in=1 fan_out=0 hub=0 path_end=25
+  0676fee31211f1dc826c40c65893b572808478552ae10445a132a4802a8551d8 fan_in=1 fan_out=0 hub=0 path_end=25
+  06aba67270c0cf6c64527eb0eae43a72460276392c38284d55ed73ec5cabdaeb fan_in=1 fan_out=0 hub=0 path_end=25
+  06c8c51afedecbb8d2675a5d8d917023e1403d117083baa26b79a352f8e96f37 fan_in=1 fan_out=0 hub=0 path_end=25
+  07341f9f25e30a03f5294334c5e0d2fd70a413e35a6ab2ff0d0d82fb1bcc90f5 fan_in=1 fan_out=0 hub=0 path_end=25
+  073b139e1ace119fd63195c8eb6a5bad406583329f2d1d7cb573378c0e911bd6 fan_in=1 fan_out=0 hub=0 path_end=25
+  0769e9ee7716e6525efe2ca012171c3323ba0e29c46911e4d4a79d8e8cede58b fan_in=1 fan_out=0 hub=0 path_end=25
+  07fbb19cef1ef5fa69eefd2a71a076f60cdd878a9be54619b9836419f473019b fan_in=1 fan_out=0 hub=0 path_end=25
+anomaly: scatter_gather_hint (fan_in>1 && fan_out>1), top 20 by hub_score:
+  29d4429586acda7be5f8787296b2741816927df7effee088a4f0940b00b6fafd fan_in=57 fan_out=2 hub=114 path_end=1
+  7cc1c53ee6b3ec86ed8166fb4dd4001f69d2c0741dd4375a117f71b15b870d10 fan_in=47 fan_out=2 hub=94 path_end=1
+  ea3b418adbf3eb97476b4b2fa0941e37487cafd445f92bc2def489a5556f7039 fan_in=39 fan_out=2 hub=78 path_end=1
+  ae8a03372234199d0a43e0a2697c1bac4cba3db9f8e481539221ef1e16f58420 fan_in=15 fan_out=2 hub=30 path_end=1
+  d54423f627b1d029fac7e014e0b8a2e79eb44b46b76c4bb116426da548858a5a fan_in=3 fan_out=9 hub=27 path_end=1
+  54184843a8ed996da2c57e6eed8829f5d75e04370ccb4e614c50b50e01cc746b fan_in=3 fan_out=8 hub=24 path_end=1
+  a54646871eaa66d0ed20e5f14129b1bb0aeae64d5772171c92b803803057689c fan_in=3 fan_out=6 hub=18 path_end=1
+  0c7e9d9647a7012676065e7839403235fef30f2bc174dcebc08be08ad76cbb35 fan_in=2 fan_out=8 hub=16 path_end=2
+  3473d04998e012137173771e59dcb2e027f8d45231c181ceb900dcb8212740a3 fan_in=4 fan_out=4 hub=16 path_end=1
+  0a95ee531916faf05044a71e182b04270b07fbe6a24c5680c4b9566d9490bc9d fan_in=3 fan_out=5 hub=15 path_end=1
+  c5a01f33ee6a2729f813119b070de6ea437d553d261c5437d7d17746295c0634 fan_in=3 fan_out=5 hub=15 path_end=1
+  0c89e6230e896858b0add365fbd9f6c932be14d4bbed885de6380317875d05c8 fan_in=2 fan_out=6 hub=12 path_end=1
+  20e48dd112722e7e964201edebab2608fea1ca96adda382ff0bea7ea532304e0 fan_in=3 fan_out=4 hub=12 path_end=1
+  58ad3ab9375b5f2e3c7a7b195133799ee228f9350de6ed220597d2e827bf93f7 fan_in=4 fan_out=3 hub=12 path_end=2
+  a00cd71bb60570f1b160af17e337d7899d226c3691d107fb81364392eac8b4ac fan_in=2 fan_out=6 hub=12 path_end=1
+  ac963aee3cddbea0455b5fe857b5d85b166a5afe1d68e232442c1e66b9b4587b fan_in=2 fan_out=5 hub=10 path_end=1
+  ba9faca697c9055272f9c81aab9c1396006c676673344137c4d0db3e706aef19 fan_in=2 fan_out=5 hub=10 path_end=1
+  2989ebcb44c9f251246d91dcef6f1c2929f546a587e4d0da5a0193bb925f504a fan_in=3 fan_out=3 hub=9 path_end=1
+  3079a98902b91ca8278f335cd6b2e2f1b26615cff836d01b211e1a09460b354a fan_in=3 fan_out=3 hub=9 path_end=1
+  35ede90f4045d57a9fab689a8f27bad878efc3478d7734124caaaf2e56ea7dd3 fan_in=3 fan_out=3 hub=9 path_end=1
+fetched 15 blocks
+Time taken: 8.760241917s
