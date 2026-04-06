@@ -7,6 +7,14 @@ import (
 	"graph-fraud/ingestor"
 )
 
+// Working plan:
+// Map from graph id to graph object
+// Each go routine worker takes two graph ids from the map and merges them into a new graph object with a new id
+// New id is pushed to channel
+// Worker pool is used to process the channel
+// Once channel is empty and var wg sync.WaitGroup from ingestor is closed, return the final graph object
+
+
 // ProcessBlock builds subgraph / graph features for a single fetched block.
 // Called from ingestor.RunWithHandler as soon as each block finishes downloading.
 func ProcessBlock(ctx context.Context, fb *ingestor.FetchedBlock) error {
