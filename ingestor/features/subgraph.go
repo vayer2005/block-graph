@@ -24,8 +24,6 @@ type Subgraph struct {
 	Edges []TxEdge
 }
 
-const subgraphChanCap = 1024
-
 var (
 	// SubgraphRegistryMu guards Subgraphs.
 	SubgraphRegistryMu sync.Mutex
@@ -37,14 +35,13 @@ var (
 	numGraphs atomic.Int64
 
 	pipelineOnce sync.Once
-	subgraphIDs  chan int
 )
 
 func initPipeline() {
 	pipelineOnce.Do(func() {
 		Subgraphs = make(map[int]*Subgraph)
-		subgraphIDs = make(chan int, subgraphChanCap)
 		nextGraphID.Store(0)
+		initMergeHeap()
 	})
 }
 
@@ -60,20 +57,23 @@ func ActiveSubgraphCount() int64 {
 	return numGraphs.Load()
 }
 
-// SubgraphIDQueue returns the receive side of the subgraph id queue
-func SubgraphIDQueue() <-chan int {
-	initPipeline()
-	return subgraphIDs
-}
-
-// EnqueueSubgraphID sends a graph id on the merge queue (e.g. after combining two subgraphs). Same channel ProcessBlock writes to.
+// EnqueueSubgraphID adds a graph id to the merge min-heap with its current edge count (for ordering).
 func EnqueueSubgraphID(ctx context.Context, id int) error {
 	initPipeline()
-	select {
-	case subgraphIDs <- id:
-	case <-ctx.Done():
-		return ctx.Err()
+	if err := ctx.Err(); err != nil {
+		return err
 	}
+	SubgraphRegistryMu.Lock()
+	sg, ok := Subgraphs[id]
+	var n int
+	if ok && sg != nil {
+		n = len(sg.Edges)
+	}
+	SubgraphRegistryMu.Unlock()
+	if !ok {
+		return fmt.Errorf("enqueue: unknown subgraph id %d", id)
+	}
+	pushSubgraphMergeHeap(id, n)
 	return nil
 }
 
@@ -181,17 +181,16 @@ func ProcessBlock(ctx context.Context, fb *ingestor.FetchedBlock) error {
 	id := AllocGraphID()
 
 	SubgraphRegistryMu.Lock()
-	fmt.Printf("Subgraph built for id %d with %d edges\n", id, len(sg.Edges))
+	fmt.Printf("Subgraph built for id %d with %d edges for block height %d\n", id, len(sg.Edges), fb.Height)
 	Subgraphs[id] = sg
 	SubgraphRegistryMu.Unlock()
 
 	numGraphs.Add(1)
 
-	select {
-	case subgraphIDs <- id:
-	case <-ctx.Done():
-		return ctx.Err()
+	if err := ctx.Err(); err != nil {
+		return err
 	}
+	pushSubgraphMergeHeap(id, len(sg.Edges))
 
 	return nil
 }
