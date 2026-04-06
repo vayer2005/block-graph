@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import type { AnomalyDashboard, LayoutScene } from "./types";
 import {
   layoutFanIn,
@@ -34,53 +34,40 @@ async function loadDashboard(): Promise<AnomalyDashboard> {
 export default function App() {
   const [dashboard, setDashboard] = useState<AnomalyDashboard | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const [loadingBlocks, setLoadingBlocks] = useState(true);
-  const [generated, setGenerated] = useState(false);
+  const [loadingBlocks, setLoadingBlocks] = useState(false);
 
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      setLoadingBlocks(true);
-      setLoadError(null);
-      try {
-        const data = await loadDashboard();
-        if (!cancelled) {
-          setDashboard(data);
-        }
-      } catch (e) {
-        if (!cancelled) {
-          setLoadError(e instanceof Error ? e.message : String(e));
-        }
-      } finally {
-        if (!cancelled) {
-          setLoadingBlocks(false);
-        }
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, []);
+  async function handleGenerate() {
+    setLoadError(null);
+    setLoadingBlocks(true);
+    try {
+      const data = await loadDashboard();
+      setDashboard(data);
+    } catch (e) {
+      setLoadError(e instanceof Error ? e.message : String(e));
+    } finally {
+      setLoadingBlocks(false);
+    }
+  }
 
   const fanIn = useMemo(() => {
-    if (!generated || !dashboard?.top_fan_in) return emptyScene;
+    if (!dashboard?.top_fan_in) return emptyScene;
     return layoutFanIn(dashboard.top_fan_in);
-  }, [generated, dashboard]);
+  }, [dashboard]);
 
   const fanOut = useMemo(() => {
-    if (!generated || !dashboard?.top_fan_out) return emptyScene;
+    if (!dashboard?.top_fan_out) return emptyScene;
     return layoutFanOut(dashboard.top_fan_out);
-  }, [generated, dashboard]);
+  }, [dashboard]);
 
   const gatherScatter = useMemo(() => {
-    if (!generated || !dashboard?.top_gather_scatter) return emptyScene;
+    if (!dashboard?.top_gather_scatter) return emptyScene;
     return layoutGatherScatter(dashboard.top_gather_scatter);
-  }, [generated, dashboard]);
+  }, [dashboard]);
 
   const longestHop = useMemo(() => {
-    if (!generated || !dashboard?.longest_hop_path) return emptyScene;
+    if (!dashboard?.longest_hop_path) return emptyScene;
     return layoutLongestPathFlow(dashboard.longest_hop_path);
-  }, [generated, dashboard]);
+  }, [dashboard]);
 
   return (
     <div className="app">
@@ -112,15 +99,15 @@ export default function App() {
             ) : loadError ? (
               <>could not load ({loadError})</>
             ) : (
-              <>…</>
+              <>click the button below to fetch blocks and load metrics</>
             )}
           </p>
         </div>
         <button
           type="button"
           className="generate-btn"
-          disabled={!dashboard || loadingBlocks}
-          onClick={() => setGenerated(true)}
+          disabled={loadingBlocks}
+          onClick={handleGenerate}
         >
           Generate visualizations
         </button>
@@ -128,12 +115,15 @@ export default function App() {
 
       {loadError && !loadingBlocks && (
         <p className="hint error-text">
-          Failed to refresh dashboard data. Fix the error above and reload the page.
+          Failed to refresh dashboard data. Fix the error above and try again.
         </p>
       )}
 
-      {!dashboard || loadError ? null : !generated ? (
-        <p className="hint">Click the button to lay out WebGL scenes from the JSON highlights.</p>
+      {!dashboard ? (
+        <p className="hint">
+          Click <strong>Generate visualizations</strong> to clear the JSON, run the ingestor, and lay
+          out the WebGL scenes.
+        </p>
       ) : (
         <div className="grid grid-4">
           <ScenePanel title="top_fan_in" points={fanIn.points} edges={fanIn.edges} />

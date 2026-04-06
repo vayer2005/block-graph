@@ -1,7 +1,7 @@
 {
   "meta": {
-    "node_count": 117420,
-    "edge_count": 103225,
+    "node_count": 117162,
+    "edge_count": 103366,
     "is_dag": true,
     "longest_path_edge_count_global": 25
   },
@@ -50,9 +50,9 @@
         {
           "txid": "1294929300031241",
           "fan_in": 0,
-          "fan_out": 4,
+          "fan_out": 3,
           "in_sats": 0,
-          "out_sats": 211519
+          "out_sats": 158383
         },
         {
           "txid": "1918352561043515",
@@ -155,9 +155,9 @@
         {
           "txid": "3125007056369937",
           "fan_in": 0,
-          "fan_out": 15,
+          "fan_out": 13,
           "in_sats": 0,
-          "out_sats": 8861530
+          "out_sats": 4507822
         },
         {
           "txid": "325252875017564",
@@ -281,9 +281,9 @@
         {
           "txid": "5129472558825699",
           "fan_in": 0,
-          "fan_out": 5,
+          "fan_out": 6,
           "in_sats": 0,
-          "out_sats": 462105
+          "out_sats": 610396
         },
         {
           "txid": "5154224834509608",
@@ -337,9 +337,9 @@
         {
           "txid": "5811608348992998",
           "fan_in": 0,
-          "fan_out": 6,
+          "fan_out": 4,
           "in_sats": 0,
-          "out_sats": 1387218
+          "out_sats": 689018
         },
         {
           "txid": "5882195657611897",
@@ -358,9 +358,9 @@
         {
           "txid": "6118376729295622",
           "fan_in": 0,
-          "fan_out": 4,
+          "fan_out": 3,
           "in_sats": 0,
-          "out_sats": 405959
+          "out_sats": 331785
         },
         {
           "txid": "6237680868510971",
@@ -379,16 +379,16 @@
         {
           "txid": "6453667278769114",
           "fan_in": 0,
-          "fan_out": 12,
+          "fan_out": 9,
           "in_sats": 0,
-          "out_sats": 3174378
+          "out_sats": 1778013
         },
         {
           "txid": "6557762225198256",
           "fan_in": 0,
-          "fan_out": 3,
+          "fan_out": 2,
           "in_sats": 0,
-          "out_sats": 1164305
+          "out_sats": 368042
         },
         {
           "txid": "6976359564989685",
