@@ -77,7 +77,7 @@ export default function App() {
             <div className="loading-spinner" aria-hidden />
             <p className="loading-title">Blocks are being fetched</p>
             <p className="loading-sub">
-              Clearing <code>anomaly-dashboard.json</code> and running the ingestor — this may take a
+              Fetching most recent Bitcoin blocks. this may take a
               minute.
             </p>
           </div>
@@ -86,9 +86,9 @@ export default function App() {
 
       <header className="header">
         <div>
-          <h1>Anomaly patterns</h1>
+          <h1>Anomaly patterns in most recent Bitcoin blocks</h1>
           <p className="sub">
-            Data: <code>anomaly-dashboard.json</code> — merged graph{" "}
+            Data: {" "}
             {dashboard ? (
               <>
                 <strong>{dashboard.meta.node_count.toLocaleString()}</strong> nodes,{" "}
