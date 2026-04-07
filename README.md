@@ -2,7 +2,7 @@
 
 **Source:** [YouTube ~5:52](https://www.youtube.com/watch?v=szLUNcUwbVE&t=352s) (AML-style framing: patterns in the transaction graph and what they can suggest for risk triage).
 
-**This lecture was the project's inspiration.**
+[**This lecture was the project's inspiration.**](https://www.youtube.com/watch?v=szLUNcUwbVE&t=352s)
 
 Graph signals from the merged transaction graph (degrees, path-style and hub-style summaries) surface in the anomaly dashboard; the screenshot below is an example of that view.
 
@@ -51,7 +51,7 @@ Each completed block is passed to `features.ProcessBlock`, which builds one subg
 
 ### Output
 
-The result is one consolidated; downstream, the code reports degrees (fan-in / fan-out), and other graph anomalies commonly used in fraud detection algorithms (see youtube link below), and related metrics into JSON for the dashboard.
+The result is one consolidated; downstream, the code reports degrees (fan-in / fan-out), and other graph anomalies commonly used in fraud detection algorithms (see youtube link above), and related metrics into JSON for the dashboard.
 
 ---
 
