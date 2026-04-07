@@ -12,7 +12,7 @@ Graph signals from the merged transaction graph (degrees, path-style and hub-sty
 
 This repository is an ingestion pipeline and graph-building experiment for Bitcoin **transaction-ID graphs** (nodes are `txid`s, directed edges are spends). Recent blocks are fetched, each block is turned into a subgraph of edges, subgraphs are merged into one graph, and downstream code computes structural “anomaly” style metrics for a small dashboard.
 
-Pipeline / dashboard render
+![Pipeline / dashboard render](gifs/pipeline-render.gif)
 
 ---
 
@@ -169,4 +169,4 @@ From the repo root (see `ingestor/cmd/main.go` for flags):
 go run ./ingestor/cmd/
 ```
 
-Optional Postgres cache: set `DATABASE_URL` or pass `-database-url`. The dashboard JSON path defaults to `anomaly-dashboard.json`.
+Optional Postgres cache: set `DATABASE_URL`
