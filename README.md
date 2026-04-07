@@ -12,7 +12,8 @@ Graph signals from the merged transaction graph (degrees, path-style and hub-sty
 
 This repository is an ingestion pipeline and graph-building experiment for Bitcoin **transaction-ID graphs** (nodes are `txid`s, directed edges are spends). Recent blocks are fetched, each block is turned into a subgraph of edges, subgraphs are merged into one graph, and downstream code computes structural “anomaly” style metrics for a small dashboard.
 
-![Pipeline / dashboard render](gifs/pipeline-render.gif)
+# Final Result
+<img src="gifs/pipeline-render.gif" alt="Pipeline / dashboard render" width="920"/>
 
 ---
 

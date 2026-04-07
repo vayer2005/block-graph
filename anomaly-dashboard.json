@@ -1,839 +1,825 @@
 {
   "meta": {
-    "node_count": 117162,
-    "edge_count": 103366,
+    "node_count": 95235,
+    "edge_count": 84241,
     "is_dag": true,
     "longest_path_edge_count_global": 25
   },
   "top_fan_in": {
     "kind": "fan_in",
-    "metric_value": 994,
-    "center_txid": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
+    "metric_value": 561,
+    "center_txid": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
     "metric_detail": "fan_in_degree",
     "subgraph": {
       "nodes": [
         {
-          "txid": "1105826513443886",
+          "txid": "1030878721367774",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 133072
+          "out_sats": 546
         },
         {
-          "txid": "1112890238096990",
+          "txid": "1060354765024641",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 141513
+          "out_sats": 546
         },
         {
-          "txid": "1152350126088028",
+          "txid": "1077980419307303",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 292823
+          "out_sats": 546
         },
         {
-          "txid": "1169517551288007",
+          "txid": "108976250140026",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 140557
+          "out_sats": 546
         },
         {
-          "txid": "1289955163666749",
+          "txid": "109294071102473",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 148839
+          "out_sats": 546
         },
         {
-          "txid": "1294929300031241",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 158383
-        },
-        {
-          "txid": "1918352561043515",
+          "txid": "1109389527159750",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 149550
+          "out_sats": 546
         },
         {
-          "txid": "1949473782857870",
+          "txid": "1118594402660210",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 179509
+          "out_sats": 546
         },
         {
-          "txid": "1974535297057845",
+          "txid": "1125364656260299",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 176979
+          "out_sats": 546
         },
         {
-          "txid": "2296652336738450",
+          "txid": "1137049234343321",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 268939
+          "out_sats": 546
         },
         {
-          "txid": "2450442156935281",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 172593
-        },
-        {
-          "txid": "2675622027135486",
+          "txid": "1142397360867678",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 172088
+          "out_sats": 546
         },
         {
-          "txid": "2708625956211139",
+          "txid": "1154741606698714",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 140505
+          "out_sats": 546
         },
         {
-          "txid": "2808126735628949",
+          "txid": "117194786070959",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 182252
+          "out_sats": 546
         },
         {
-          "txid": "2874647558560744",
+          "txid": "1189758462929561",
           "fan_in": 0,
           "fan_out": 1,
           "in_sats": 0,
-          "out_sats": 224468
+          "out_sats": 546
         },
         {
-          "txid": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "fan_in": 994,
+          "txid": "1195749076953389",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1196164765645997",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1196754808399415",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1198823310557003",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "120080734182094",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1240856205948800",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1249831683719155",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1250064898789124",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1259459980826687",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1267073824992912",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1267357066342061",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1274065985453295",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "129541602576087",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "129708050777970",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1297455487033984",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "130771356522452",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1342364702418658",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1346728368686658",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1353069450265846",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "136405010195374",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1374320827367547",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1378517381483908",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1378814839390501",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "138384962258736",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1388877361749358",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1393481415203459",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1427182835382785",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "142962533516124",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1484203773464383",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1484520391710396",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1491134327358817",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1493580935641605",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1512502472186075",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1529916553626460",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1570624762087904",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1570683440372911",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1589400929612367",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1590105733521068",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1592912032122553",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "159552833798160",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1596735433337169",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1614263469979509",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1632476466442889",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1641785442530775",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1647446740501581",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "165002638396116",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1652338883507369",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1657086879874324",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1673611864712169",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1692614844134450",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "1716689397199549",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 546
+        },
+        {
+          "txid": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "fan_in": 561,
           "fan_out": 0,
-          "in_sats": 46121101,
+          "in_sats": 306306,
           "out_sats": 0
-        },
-        {
-          "txid": "2902050934739168",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 128481
-        },
-        {
-          "txid": "2912001905233754",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 141026
-        },
-        {
-          "txid": "2942274282553650",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 158386
-        },
-        {
-          "txid": "2983072201653781",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 122011
-        },
-        {
-          "txid": "3125007056369937",
-          "fan_in": 0,
-          "fan_out": 13,
-          "in_sats": 0,
-          "out_sats": 4507822
-        },
-        {
-          "txid": "325252875017564",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 371300
-        },
-        {
-          "txid": "3301645008947983",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 168983
-        },
-        {
-          "txid": "3315958454042689",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 273829
-        },
-        {
-          "txid": "3666598172693442",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 151515
-        },
-        {
-          "txid": "3779701402444885",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 171449
-        },
-        {
-          "txid": "3814668750673823",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 208824
-        },
-        {
-          "txid": "3905752164687722",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 1921168
-        },
-        {
-          "txid": "4040756787514230",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 207938
-        },
-        {
-          "txid": "4113956915377152",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 141089
-        },
-        {
-          "txid": "4153090839072842",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 140622
-        },
-        {
-          "txid": "4201286174244432",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 142120
-        },
-        {
-          "txid": "4247404885579247",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 191346
-        },
-        {
-          "txid": "4326657248415166",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 192990
-        },
-        {
-          "txid": "4621211765434378",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 130790
-        },
-        {
-          "txid": "4677324790893797",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 1754451
-        },
-        {
-          "txid": "4681842721274743",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 263334
-        },
-        {
-          "txid": "4840149655144083",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 354627
-        },
-        {
-          "txid": "5129472558825699",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 610396
-        },
-        {
-          "txid": "5154224834509608",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 155938
-        },
-        {
-          "txid": "5338927801869534",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 299779
-        },
-        {
-          "txid": "5425786462928917",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 483683
-        },
-        {
-          "txid": "5442508572879111",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 523230
-        },
-        {
-          "txid": "5552621043531563",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 261913
-        },
-        {
-          "txid": "5616543488859409",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 122517
-        },
-        {
-          "txid": "5800779271545037",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 170598
-        },
-        {
-          "txid": "5811608348992998",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 689018
-        },
-        {
-          "txid": "5882195657611897",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 354694
-        },
-        {
-          "txid": "6101408681501221",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 556418
-        },
-        {
-          "txid": "6118376729295622",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 331785
-        },
-        {
-          "txid": "6237680868510971",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 760053
-        },
-        {
-          "txid": "6357337634765903",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 161289
-        },
-        {
-          "txid": "6453667278769114",
-          "fan_in": 0,
-          "fan_out": 9,
-          "in_sats": 0,
-          "out_sats": 1778013
-        },
-        {
-          "txid": "6557762225198256",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 368042
-        },
-        {
-          "txid": "6976359564989685",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 431458
-        },
-        {
-          "txid": "7147592979136785",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 184135
-        },
-        {
-          "txid": "7240141155155520",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 209100
-        },
-        {
-          "txid": "7744602649417014",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 258917
-        },
-        {
-          "txid": "7831446057759796",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 3253003
-        },
-        {
-          "txid": "8005413392358717",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 477346
-        },
-        {
-          "txid": "8121503116980168",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 296878
-        },
-        {
-          "txid": "8284238171498515",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 148684
-        },
-        {
-          "txid": "8721022308644623",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 123267
-        },
-        {
-          "txid": "8896632950558119",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 1462837
-        },
-        {
-          "txid": "935750474171040",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 567216
         }
       ],
       "edges": [
         {
-          "from": "1105826513443886",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 133072
+          "from": "1030878721367774",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1112890238096990",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 141513
+          "from": "1060354765024641",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1152350126088028",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 292823
+          "from": "1077980419307303",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1169517551288007",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 140557
+          "from": "108976250140026",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1289955163666749",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 148839
+          "from": "109294071102473",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1294929300031241",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 133715
+          "from": "1109389527159750",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1918352561043515",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 149550
+          "from": "1118594402660210",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1949473782857870",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 179509
+          "from": "1125364656260299",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "1974535297057845",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 176979
+          "from": "1137049234343321",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2296652336738450",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 268939
+          "from": "1142397360867678",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2450442156935281",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 140450
+          "from": "1154741606698714",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2675622027135486",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 172088
+          "from": "117194786070959",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2708625956211139",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 140505
+          "from": "1189758462929561",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2808126735628949",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 182252
+          "from": "1195749076953389",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2874647558560744",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 224468
+          "from": "1196164765645997",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2902050934739168",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 128481
+          "from": "1196754808399415",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2912001905233754",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 141026
+          "from": "1198823310557003",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2942274282553650",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 158386
+          "from": "120080734182094",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "2983072201653781",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 122011
+          "from": "1240856205948800",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "3125007056369937",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 183865
+          "from": "1249831683719155",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "325252875017564",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 163771
+          "from": "1250064898789124",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "3301645008947983",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 168983
+          "from": "1259459980826687",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "3315958454042689",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 133171
+          "from": "1267073824992912",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "3666598172693442",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 151515
+          "from": "1267357066342061",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "3779701402444885",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 171449
+          "from": "1274065985453295",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "3814668750673823",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 208824
+          "from": "129541602576087",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "3905752164687722",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 126338
+          "from": "129708050777970",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4040756787514230",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 207938
+          "from": "1297455487033984",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4113956915377152",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 141089
+          "from": "130771356522452",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4153090839072842",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 140622
+          "from": "1342364702418658",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4201286174244432",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 142120
+          "from": "1346728368686658",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4247404885579247",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 191346
+          "from": "1353069450265846",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4326657248415166",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 192990
+          "from": "136405010195374",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4621211765434378",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 130790
+          "from": "1374320827367547",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4677324790893797",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 144845
+          "from": "1378517381483908",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4681842721274743",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 181099
+          "from": "1378814839390501",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "4840149655144083",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 354627
+          "from": "138384962258736",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5129472558825699",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 141169
+          "from": "1388877361749358",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5154224834509608",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 155938
+          "from": "1393481415203459",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5338927801869534",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 299779
+          "from": "1427182835382785",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5425786462928917",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 433152
+          "from": "142962533516124",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5442508572879111",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 128507
+          "from": "1484203773464383",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5552621043531563",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 261913
+          "from": "1484520391710396",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5616543488859409",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 122517
+          "from": "1491134327358817",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5800779271545037",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 170598
+          "from": "1493580935641605",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5811608348992998",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 140354
+          "from": "1512502472186075",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "5882195657611897",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 137040
+          "from": "1529916553626460",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "6101408681501221",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 513065
+          "from": "1570624762087904",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "6118376729295622",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 155724
+          "from": "1570683440372911",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "6237680868510971",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 148705
+          "from": "1589400929612367",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "6357337634765903",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 146351
+          "from": "1590105733521068",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "6453667278769114",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 320251
+          "from": "1592912032122553",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "6557762225198256",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 130098
+          "from": "159552833798160",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "6976359564989685",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 125651
+          "from": "1596735433337169",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "7147592979136785",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 184135
+          "from": "1614263469979509",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "7240141155155520",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 155892
+          "from": "1632476466442889",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "7744602649417014",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 214018
+          "from": "1641785442530775",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "7831446057759796",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 125789
+          "from": "1647446740501581",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "8005413392358717",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 477346
+          "from": "165002638396116",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "8121503116980168",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 296878
+          "from": "1652338883507369",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "8284238171498515",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 148684
+          "from": "1657086879874324",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "8721022308644623",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 123267
+          "from": "1673611864712169",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "8896632950558119",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 120252
+          "from": "1692614844134450",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         },
         {
-          "from": "935750474171040",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 519720
+          "from": "1716689397199549",
+          "to": "de4c42b0589a10966ff7c7135fb730fab36fcc99be3b833d6269f0422e91c18e",
+          "amount_sat": 546
         }
       ],
       "edges_truncated": true,
-      "total_edges_available": 994
+      "total_edges_available": 561
     }
   },
   "top_fan_out": {
     "kind": "fan_out",
-    "metric_value": 63,
-    "center_txid": "5928153547545538",
+    "metric_value": 60,
+    "center_txid": "7911132560270615",
     "metric_detail": "fan_out_degree",
     "subgraph": {
       "nodes": [
         {
-          "txid": "044ac7e00a235a31d10c473a78fbd8a61a1ee44d22aa5d3e5aadd1665da7cd3a",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 43033,
-          "out_sats": 0
-        },
-        {
-          "txid": "064d2b0dbf8edd3e619bca8e5446faef82b39b0cebba3ee6dcbde472934a841b",
+          "txid": "0b56ab0959f3ce422e09f10c66cbb2ae6c48d29c8fbd8a2ef4740730a06f1eb6",
           "fan_in": 2,
           "fan_out": 0,
-          "in_sats": 144656,
+          "in_sats": 4229170,
           "out_sats": 0
         },
         {
-          "txid": "0cfb301929e8057fe9454a52f82edcaa2d2a1055f670d56cfe0a3ad6f14fcc74",
-          "fan_in": 42,
-          "fan_out": 0,
-          "in_sats": 10051386,
-          "out_sats": 0
-        },
-        {
-          "txid": "119af0e5aadd59dd7d6d9884edd6de9bc9a5841f168277a14a1b8aa7d8158f33",
-          "fan_in": 87,
-          "fan_out": 0,
-          "in_sats": 14365432,
-          "out_sats": 0
-        },
-        {
-          "txid": "133b4ec72efeb4d4a2730661ee3f51dea46c3d076eb54a44bda6251300b0a085",
+          "txid": "119ac1b4ff8f6cfcc8191f2e6c9018d7c2a3d58a275238b03df7d97623fb1bba",
           "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 205223,
+          "in_sats": 65372,
+          "out_sats": 0
+        },
+        {
+          "txid": "14a6273be719e3dc60cdfb57f1fef5148905cfabf5b1f6502c8decd70485faeb",
+          "fan_in": 7,
+          "fan_out": 0,
+          "in_sats": 565636,
           "out_sats": 0
         },
         {
@@ -844,185 +830,213 @@
           "out_sats": 0
         },
         {
-          "txid": "1cc91479c97d6e5b6029676d0fabe4f65e4761937c0a5207501493263802d929",
+          "txid": "1ae82f27c06734532ec0105f76f34c7b225fc4fdeab5224c370f1b22726a924d",
           "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 271130,
+          "in_sats": 156208,
           "out_sats": 0
         },
         {
-          "txid": "1da5520fbd94035c70ab85c592de307851a65bcebc26c1db39d9c321fab6c785",
+          "txid": "1c04ff1e547941d68eab4af02dbbc1ca0dbb3b02fcae456976244d4036362985",
+          "fan_in": 21,
+          "fan_out": 0,
+          "in_sats": 4627833,
+          "out_sats": 0
+        },
+        {
+          "txid": "1cc8d18003aab285aee5ed9bebadd7f8dc2aaba73836e43cb119138f03995398",
           "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 31891,
+          "in_sats": 486621,
           "out_sats": 0
         },
         {
-          "txid": "216823c99ec3bb564420798e9cec5605a39b6282f16edab5d6ee1a57d0bd22ad",
-          "fan_in": 3,
-          "fan_out": 0,
-          "in_sats": 2080648,
-          "out_sats": 0
-        },
-        {
-          "txid": "247287e5eb65db430eec25c228f0115c83e92ee91ec71f7767af79563afc1f4f",
-          "fan_in": 46,
-          "fan_out": 0,
-          "in_sats": 6757416,
-          "out_sats": 0
-        },
-        {
-          "txid": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "fan_in": 994,
-          "fan_out": 0,
-          "in_sats": 46121101,
-          "out_sats": 0
-        },
-        {
-          "txid": "2fddd6190f098f8e099e0aa5357505ecdc069228a10d425312b4beb64548063e",
-          "fan_in": 2,
-          "fan_out": 0,
-          "in_sats": 419869,
-          "out_sats": 0
-        },
-        {
-          "txid": "34e3768ed7237c73b91ad80f0f3fef82e2b4a6086adda8ee56f68cffa915c749",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 128348,
-          "out_sats": 0
-        },
-        {
-          "txid": "36e3f2311f5c7734425834bc6c7c68f634d9e11e58fa0df8c10533abd932ac29",
-          "fan_in": 28,
-          "fan_out": 1,
-          "in_sats": 6024008,
-          "out_sats": 1000878
-        },
-        {
-          "txid": "3b983ef9c2a8ffcaa41436b78dc1862cfe25db3f28923b4c5130366edabde41e",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 1584044,
-          "out_sats": 0
-        },
-        {
-          "txid": "40c70bb4c1750478682a42347e9d8c2d13abf0bea3eacc22c41488017ec51aa9",
-          "fan_in": 135,
-          "fan_out": 1,
-          "in_sats": 49235542,
-          "out_sats": 49192366
-        },
-        {
-          "txid": "45baa9d44c126974e29e5589252e6a078cf7734270b6a1c8fc58741e9fa965ea",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 616099,
-          "out_sats": 0
-        },
-        {
-          "txid": "494309cc379bb7b39f6b54630453e067ff466bd3914a7623c219c671fbc368d4",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 172163,
-          "out_sats": 0
-        },
-        {
-          "txid": "5928153547545538",
-          "fan_in": 0,
-          "fan_out": 63,
-          "in_sats": 0,
-          "out_sats": 26317961
-        },
-        {
-          "txid": "5a6134cf07478f945dd602acfdc1e994b7db29e23b320b5f6b411a54faf77c1a",
-          "fan_in": 86,
-          "fan_out": 0,
-          "in_sats": 23857780,
-          "out_sats": 0
-        },
-        {
-          "txid": "60e9f8cfc5a23f63975b38fd77e329aa5b85fe04023f58bb72cba8b0194ea746",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 393041,
-          "out_sats": 0
-        },
-        {
-          "txid": "62e9e1d808f3b6ff2d7f0efa536566caef69ed24c911485115dcc1825b7d8205",
-          "fan_in": 6,
-          "fan_out": 0,
-          "in_sats": 182060,
-          "out_sats": 0
-        },
-        {
-          "txid": "67624f6f16b67a8ec4fc5bcd9ed0ba4d7577885c7eb5beec69a2610e4cce8a5b",
-          "fan_in": 32,
-          "fan_out": 0,
-          "in_sats": 3951869,
-          "out_sats": 0
-        },
-        {
-          "txid": "7077e4ee7d58579bd8f2e235e4b76a0fb80718a394a787eae7318583cad1d2cd",
-          "fan_in": 3,
-          "fan_out": 0,
-          "in_sats": 865821,
-          "out_sats": 0
-        },
-        {
-          "txid": "73b57ad0754b1f5cb2f0529f7f2fc7b8a6227e5431df9276dc985332ac1ae263",
-          "fan_in": 65,
-          "fan_out": 0,
-          "in_sats": 31254006,
-          "out_sats": 0
-        },
-        {
-          "txid": "781345c7813359b34b65ce2e1a57df3c7f71ec13561d28f87379a2993de6e47c",
+          "txid": "1d81990996778ff2ab16265056bb03cb6a2f3a4fa36f8410045ca4a946cf253d",
           "fan_in": 60,
           "fan_out": 0,
-          "in_sats": 14933220,
+          "in_sats": 361933669,
           "out_sats": 0
         },
         {
-          "txid": "7b88d7d39b712c53475e6a3236877a91fa4d165e6a71b32673189f55f87ecaf1",
-          "fan_in": 3,
-          "fan_out": 0,
-          "in_sats": 880209,
-          "out_sats": 0
-        },
-        {
-          "txid": "7d225100afc7965a58b95519d78146e0e54e2f94a85dd6fc9711895c4c5859d4",
-          "fan_in": 2,
-          "fan_out": 0,
-          "in_sats": 1402805,
-          "out_sats": 0
-        },
-        {
-          "txid": "83ff6d8802c76972e551b0e1d73e49b9008a1cd091fff0baca626c686c9d6047",
+          "txid": "1e09be2eb37448af7041512f02e2f6b5cf5c4f52b2f27577f68acbf209b3b0cb",
           "fan_in": 58,
           "fan_out": 0,
-          "in_sats": 21597861,
+          "in_sats": 20208862,
           "out_sats": 0
         },
         {
-          "txid": "84e62371467ba1330380b9ef42fe5269f10ad01d7f76ef4a80b15c22ee1c60a7",
-          "fan_in": 63,
+          "txid": "28bcfb66fbc0c760e2897ddac7d0cac86a1f6f6ea2204f50f5e0bc2e595ebbd2",
+          "fan_in": 9,
           "fan_out": 0,
-          "in_sats": 1314567688,
+          "in_sats": 1774119,
           "out_sats": 0
         },
         {
-          "txid": "84e86a7f066edbe01036fddc96d1bb61006ea02b753bdf0dfbfafcd2f834a22f",
+          "txid": "2d9c07ed01502d89020464cd4bd7c8929a53c4e9f17671b3169e5d6b64c94e80",
+          "fan_in": 20,
+          "fan_out": 0,
+          "in_sats": 37094340,
+          "out_sats": 0
+        },
+        {
+          "txid": "2ee771fe387e5250e3df8c060c9d2eafcc0cb3c3001ca5b44ddfe03d592b5fc0",
+          "fan_in": 3,
+          "fan_out": 0,
+          "in_sats": 1416435,
+          "out_sats": 0
+        },
+        {
+          "txid": "3464047cdc916cc2fb5a1f4b0b5e78e866e0f97a524aa773ee5a4087f6500e42",
+          "fan_in": 1,
+          "fan_out": 2,
+          "in_sats": 93850132,
+          "out_sats": 48493293
+        },
+        {
+          "txid": "3b5704cd368dba28359139e3bf4e8688cd3aa5dc001e55d2b04dd1ff11f2413a",
+          "fan_in": 179,
+          "fan_out": 0,
+          "in_sats": 145084109,
+          "out_sats": 0
+        },
+        {
+          "txid": "3be04f4e9613b45f927af02b3309a85fe079e14a741f54b68114edef7d82bf5f",
+          "fan_in": 15,
+          "fan_out": 0,
+          "in_sats": 371256,
+          "out_sats": 0
+        },
+        {
+          "txid": "408cd9234f75a30d27027895551de129cfa8f15109327f86b8019cca735625aa",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 135150,
+          "out_sats": 0
+        },
+        {
+          "txid": "41aa43f5f232870769d2373ec8d8be4d16f11e3cc31c9186980686585e230870",
+          "fan_in": 175,
+          "fan_out": 0,
+          "in_sats": 35790668,
+          "out_sats": 0
+        },
+        {
+          "txid": "42c3ee765c30f395b3c6c62fdb19d579e984b8398663c38c7f24914a3861083b",
           "fan_in": 2,
           "fan_out": 0,
-          "in_sats": 618458,
+          "in_sats": 275468,
           "out_sats": 0
         },
         {
-          "txid": "864eb310a2e296dcb7b6a55fb438d0ef70ad5eb9bbbe6678e6661e38dd0c7f69",
-          "fan_in": 96,
+          "txid": "44d778a2d8e8e3cffe81ecf78dbcae4ad485fa6b323d116903637f4dd9d8ca92",
+          "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 34735551,
+          "in_sats": 365516,
+          "out_sats": 0
+        },
+        {
+          "txid": "4b32b55eedc1899d515ae30033d9fdc08cc7b6f04ec8940b742b7580506ac1a1",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 51220,
+          "out_sats": 0
+        },
+        {
+          "txid": "4e5388bb97d0df6edefae0f4e645a32bf2ac2e4306d4a06a8ecd517c9b52cf15",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 34654,
+          "out_sats": 0
+        },
+        {
+          "txid": "5071fe0b043ea23be35cfd204cb7ca20a1eedca31d8f5e6a79cb9389c1f8e0af",
+          "fan_in": 43,
+          "fan_out": 1,
+          "in_sats": 1303659475,
+          "out_sats": 1297180476
+        },
+        {
+          "txid": "54dec9ec1f893f7d7ea60e58358fd5eedcf965fc9360dfcd2c26bc86e7fc2ad9",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 4436727,
+          "out_sats": 0
+        },
+        {
+          "txid": "5b1d40ac3d1d8c88ed90da76b371877614036d8bdcbe617b852fd20d27ac5a80",
+          "fan_in": 2,
+          "fan_out": 0,
+          "in_sats": 222836,
+          "out_sats": 0
+        },
+        {
+          "txid": "63663dbcad12dd23d4c1d2b2f7bdf2975029b68e437dfe8c3f019e3a072c8207",
+          "fan_in": 135,
+          "fan_out": 0,
+          "in_sats": 162849544,
+          "out_sats": 0
+        },
+        {
+          "txid": "71f9513ed2feef3eff308c20f972d815059aa7a79c46c06701d8beceebb85df4",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 212035,
+          "out_sats": 0
+        },
+        {
+          "txid": "7862e02a7c747bb8990db4619d3edd48e948816e3dd501786e80ef0470f4ff85",
+          "fan_in": 2,
+          "fan_out": 4,
+          "in_sats": 101739229,
+          "out_sats": 56021517
+        },
+        {
+          "txid": "7911132560270615",
+          "fan_in": 0,
+          "fan_out": 60,
+          "in_sats": 0,
+          "out_sats": 230211069
+        },
+        {
+          "txid": "7a60a47240649691d522b348bcb64928d625cc0da5abb7e3a806ceb49b3d55be",
+          "fan_in": 7,
+          "fan_out": 0,
+          "in_sats": 2872293,
+          "out_sats": 0
+        },
+        {
+          "txid": "83b217a92298377520b07ba6db2bab7f5d94c87b009c4b38c75757a86902be6a",
+          "fan_in": 2,
+          "fan_out": 0,
+          "in_sats": 199123,
+          "out_sats": 0
+        },
+        {
+          "txid": "85f7cbfc35753fe923833138413971310cdccf43e952500299880bac255e5e6b",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 429497,
+          "out_sats": 0
+        },
+        {
+          "txid": "89e12eaf533a3454d81750404fb47ee1aeb7da711155def1d4b758cc4ab63e99",
+          "fan_in": 3,
+          "fan_out": 1,
+          "in_sats": 728891,
+          "out_sats": 728395
+        },
+        {
+          "txid": "8af60f436b0d2146769dc824b61b459a65efcf626f166ea558d562378ee7eed7",
+          "fan_in": 176,
+          "fan_out": 0,
+          "in_sats": 23959092,
+          "out_sats": 0
+        },
+        {
+          "txid": "8d323352649017d76584d1065d2fbb18e38bebb860fa29087ab7a109e3e89116",
+          "fan_in": 118,
+          "fan_out": 0,
+          "in_sats": 29356614,
           "out_sats": 0
         },
         {
@@ -1033,108 +1047,94 @@
           "out_sats": 0
         },
         {
-          "txid": "92452661860fada5d475b3de81ddf88c9bb1fe5e9b9ed549c1d3ae0db1defe9b",
+          "txid": "91787d61337fe441ee7f0d2a353b7ead1c9187453104e6f52ec556e055a1a167",
+          "fan_in": 68,
+          "fan_out": 0,
+          "in_sats": 13672482,
+          "out_sats": 0
+        },
+        {
+          "txid": "94268e01b27244eb9f1bf9d79c0e90116d22b3b637ed014f467fb0a11e01f07b",
+          "fan_in": 60,
+          "fan_out": 0,
+          "in_sats": 57421637,
+          "out_sats": 0
+        },
+        {
+          "txid": "9da0e7c73018a8099afe4d7c9be284a15a7dc1513486d3e7dc2f4e050bba7b3e",
+          "fan_in": 2,
+          "fan_out": 4,
+          "in_sats": 87907433,
+          "out_sats": 44362581
+        },
+        {
+          "txid": "9f707facfd21721980f5f7a4d783e0e27558a26c3deb307d3450616753183023",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 715671,
+          "out_sats": 0
+        },
+        {
+          "txid": "a15772ef2f89b5e7699312e0888d66529d6d45ddc5d1076c3d2fa0fbb5c002bb",
+          "fan_in": 4,
+          "fan_out": 0,
+          "in_sats": 372329,
+          "out_sats": 0
+        },
+        {
+          "txid": "aa732a4a94f640e82c006bf8055d9675c56fb3d61b466887345a72239f5b46eb",
+          "fan_in": 163,
+          "fan_out": 0,
+          "in_sats": 52740906,
+          "out_sats": 0
+        },
+        {
+          "txid": "b1481f1204eb209f63621f93cd86c9e50bc71b5fee7a87689bd757dd37d025dc",
+          "fan_in": 11,
+          "fan_out": 0,
+          "in_sats": 3516282,
+          "out_sats": 0
+        },
+        {
+          "txid": "b22bcd148d8cfa466301888ebb1c8771e3e5993f7ec03457fce7d5430358b0ee",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 86091,
+          "out_sats": 0
+        },
+        {
+          "txid": "b469038fdca8cf02eb9c505c9f34ddf68ef5c4e8164c081f7d54024246dd0a00",
           "fan_in": 3,
           "fan_out": 0,
-          "in_sats": 1859528,
+          "in_sats": 878105,
           "out_sats": 0
         },
         {
-          "txid": "9412fbc093a64e6a54af4cf6da0f105b47f348aae51d84855c490b26839b2e2f",
+          "txid": "b86695f63e2c537520f2c49aec99751be67b49a1f31ae6b4c70acabf2047d15b",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 44455,
+          "out_sats": 0
+        },
+        {
+          "txid": "bb2d57ca72daf8c940e3b5c74ee060134610caa1820b3c412bcac70748cd06a3",
           "fan_in": 2,
           "fan_out": 0,
-          "in_sats": 71881,
+          "in_sats": 3471111,
           "out_sats": 0
         },
         {
-          "txid": "96cd687f75bb69ba116044eb80bcdaf01c24bcaee305ef18d096d97ceb9af7df",
-          "fan_in": 6,
+          "txid": "c043af571245f1ef395531b025d20e475e517a34d3154873503bd9a7d3b9b013",
+          "fan_in": 8,
           "fan_out": 0,
-          "in_sats": 553418,
+          "in_sats": 2159565,
           "out_sats": 0
         },
         {
-          "txid": "991b2f565bfc0471fa6df1f01c164b6702be0d7970a56240f0cace80a012234d",
-          "fan_in": 155,
-          "fan_out": 0,
-          "in_sats": 199615348,
-          "out_sats": 0
-        },
-        {
-          "txid": "9937020df4184dc2739f2ad3934f0ae609e6a4c2473f2222eca986d59d1f63cb",
-          "fan_in": 5,
-          "fan_out": 0,
-          "in_sats": 144247,
-          "out_sats": 0
-        },
-        {
-          "txid": "9976ec683d2d2aa914a9c1a1e84d1f34c7b0226d15afa1dacb54f9be1f7e4276",
+          "txid": "c06fa91beb023c560b819b9df34a205ba1df7631258b0dc451ad107233407011",
           "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 837385,
-          "out_sats": 0
-        },
-        {
-          "txid": "9b8846f5098efa039d7d8ee55e1b3e3a9d506a62a31883e9fc1fadd7de282ca9",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 212070,
-          "out_sats": 0
-        },
-        {
-          "txid": "a06e85aca45df1a64373269235d43b1f8f585dcecabef183dad237fe4538a3b5",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 135172,
-          "out_sats": 0
-        },
-        {
-          "txid": "a648c7759cf25b016300dcb234b93821625d55f4891b6019de71421332b6a0f8",
-          "fan_in": 10,
-          "fan_out": 0,
-          "in_sats": 2405024,
-          "out_sats": 0
-        },
-        {
-          "txid": "a64be212ff75459a2df053b09fe412cae2c0451b9c157e8d296eab80b749131f",
-          "fan_in": 154,
-          "fan_out": 0,
-          "in_sats": 9673729,
-          "out_sats": 0
-        },
-        {
-          "txid": "a97a71204a3528303eb6f58abf2655ac33f908ef86a1f971bc34dcdabe59f8f9",
-          "fan_in": 111,
-          "fan_out": 0,
-          "in_sats": 50998669,
-          "out_sats": 0
-        },
-        {
-          "txid": "a9b4496062a71ce22bbbc49749d47411881aaf019dc65a10acbba1f22f59819a",
-          "fan_in": 9,
-          "fan_out": 0,
-          "in_sats": 1291115452,
-          "out_sats": 0
-        },
-        {
-          "txid": "aa49ea3cc488a52253d1d3130865b5b29052f13679ac6f8690b99b9914897c5b",
-          "fan_in": 64,
-          "fan_out": 0,
-          "in_sats": 12414859,
-          "out_sats": 0
-        },
-        {
-          "txid": "b9442b505ca9b8f3d71b46fc80406ebcc8aa60dec55f3a5b9c0ce6e5f9dc21b6",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 14346,
-          "out_sats": 0
-        },
-        {
-          "txid": "be208a9d35ccab8d4d4338aa8900fa2df74c08853fa56f1667e9add2b3e8ec52",
-          "fan_in": 7,
-          "fan_out": 0,
-          "in_sats": 221115,
+          "in_sats": 71584,
           "out_sats": 0
         },
         {
@@ -1145,1218 +1145,581 @@
           "out_sats": 0
         },
         {
-          "txid": "c6ce4aa1b679e38e71611f4738fd950b67b29ad24fa54ccd838c0478857e56bb",
-          "fan_in": 32,
+          "txid": "c2b4b5e7bf2eb5dd39a5113f36ddfbe7c147dd28e8b61d8059b50aadd55e2ae2",
+          "fan_in": 4,
           "fan_out": 0,
-          "in_sats": 61468227,
+          "in_sats": 2727592,
           "out_sats": 0
         },
         {
-          "txid": "cd98ae58c9c74365130501cedf9f594cee5d3c6cf473a5f569e1adfbd4ff6213",
-          "fan_in": 1,
+          "txid": "c352bfda91c3b3cb96bfa6280307cedc3546f4be7824d533ad65a42b616ad684",
+          "fan_in": 43,
           "fan_out": 0,
-          "in_sats": 146429,
+          "in_sats": 5864178,
           "out_sats": 0
         },
         {
-          "txid": "cfc9262045f599dd3c8ce4a1eae68f708c81894f86263d37be8a3a3e342d96aa",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 4484177,
-          "out_sats": 0
-        },
-        {
-          "txid": "d181b3946e0a324372141c57ca68a7c84990344548fc3d6fb912f43ad98f3acf",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 728631,
-          "out_sats": 0
-        },
-        {
-          "txid": "d72270252f67232438a5b217d28d4cb797717ab11b7384c9b9e9f64d39d3163c",
-          "fan_in": 11,
-          "fan_out": 0,
-          "in_sats": 9475936,
-          "out_sats": 0
-        },
-        {
-          "txid": "db7030b7cf4f04f7bc5acd402520632c7c265cb9b9862b3998e3b9f2ef33874f",
-          "fan_in": 81,
-          "fan_out": 0,
-          "in_sats": 68694449,
-          "out_sats": 0
-        },
-        {
-          "txid": "df4717f3c656619f635fba94fdfb640f83dd1e825785a477067af103da205670",
+          "txid": "d816911a749365284d8be6d749be0a032b208b74bf8dfe99e16bacc296964733",
           "fan_in": 2,
           "fan_out": 0,
-          "in_sats": 323498,
+          "in_sats": 561002,
           "out_sats": 0
         },
         {
-          "txid": "e0080f4587de569f2e837e2e46693050b17981ba81b2bb18a9acdcd2e57228a8",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 35818,
-          "out_sats": 0
-        },
-        {
-          "txid": "e0da3813cf1276d0be7f4e9c7ffc00fe222d6a661b046a4b096eb83cdeb349ab",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 37346,
-          "out_sats": 0
-        },
-        {
-          "txid": "e599853f46ab21e5472eed51b2abb150b2c5a49701000e9f26fde870aab5a3d7",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 525891,
-          "out_sats": 0
-        },
-        {
-          "txid": "eb0a8e8be1e78c133a424d4a4f500d9b2dcb9cccb4f8c94b29ccbdeb60e97a4d",
-          "fan_in": 1,
-          "fan_out": 0,
-          "in_sats": 366488,
-          "out_sats": 0
-        },
-        {
-          "txid": "f2da8015e45d8663d0b27da88d0f5ea41dba5790fef8beeb9d94f417699879ff",
+          "txid": "dddfd2096947a4a29c010bf6f8fd8e56aa742a1140afaed128fde9cc75f9bdb1",
           "fan_in": 2,
           "fan_out": 0,
-          "in_sats": 650461,
+          "in_sats": 309926,
           "out_sats": 0
         },
         {
-          "txid": "f81b48f229c3823ea4e7192811665475a4d8c46c94255685368407099acdcce2",
-          "fan_in": 137,
+          "txid": "de6fefa68a4a59040ed9e6c002ec3b663b94c4bacfd28679c48ba6d75fd05714",
+          "fan_in": 7,
           "fan_out": 0,
-          "in_sats": 25623456,
+          "in_sats": 469460,
           "out_sats": 0
         },
         {
-          "txid": "fc75ad2c5fa58a74d0548be8e60beb2a70d2fd0d87ddbd6f9de4636b2048808a",
-          "fan_in": 109,
-          "fan_out": 0,
-          "in_sats": 50186688,
-          "out_sats": 0
-        },
-        {
-          "txid": "fde43a25afc317ff88e3db3833cf34080092eb6fcfc36aa0a6d9aaaa52cd0c7d",
+          "txid": "e47f4bf73d53b92fe0adcc7e59103cdd330ac37655b80e26c68ef8d3f8a1d566",
           "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 2157256,
+          "in_sats": 710992,
+          "out_sats": 0
+        },
+        {
+          "txid": "ecc92ac31b578181220061cd0decd8dee5a565125aacaa3f511da5eab9d18111",
+          "fan_in": 10,
+          "fan_out": 0,
+          "in_sats": 16127274,
+          "out_sats": 0
+        },
+        {
+          "txid": "ef9b2c6131c7a461f0a14951952dee8db7b02e4b54d70d1e888f2958565e0f36",
+          "fan_in": 71,
+          "fan_out": 0,
+          "in_sats": 62642908,
+          "out_sats": 0
+        },
+        {
+          "txid": "f75033a6e64928c3222136a5ddfb9d4d84c9da0b9ff014d9fe32d427d988e602",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 1406970,
+          "out_sats": 0
+        },
+        {
+          "txid": "f9adef8cc526caeb1e7021b909ff3d18cbe85768abc1e50ac50068e009483225",
+          "fan_in": 2,
+          "fan_out": 0,
+          "in_sats": 208186,
+          "out_sats": 0
+        },
+        {
+          "txid": "fd4993aba145000df3bc2ffd8988b68ffb5ecfb4970ab529fdc68db040663121",
+          "fan_in": 2,
+          "fan_out": 0,
+          "in_sats": 42992,
+          "out_sats": 0
+        },
+        {
+          "txid": "fe2fc4668845d79ea8fb6fc8057aec1f7f3969d115b8b534199c02973f28cff6",
+          "fan_in": 2,
+          "fan_out": 0,
+          "in_sats": 842753,
           "out_sats": 0
         }
       ],
       "edges": [
         {
-          "from": "5928153547545538",
-          "to": "044ac7e00a235a31d10c473a78fbd8a61a1ee44d22aa5d3e5aadd1665da7cd3a",
-          "amount_sat": 43033
+          "from": "7911132560270615",
+          "to": "0b56ab0959f3ce422e09f10c66cbb2ae6c48d29c8fbd8a2ef4740730a06f1eb6",
+          "amount_sat": 2817840
         },
         {
-          "from": "5928153547545538",
-          "to": "064d2b0dbf8edd3e619bca8e5446faef82b39b0cebba3ee6dcbde472934a841b",
-          "amount_sat": 142259
+          "from": "7911132560270615",
+          "to": "119ac1b4ff8f6cfcc8191f2e6c9018d7c2a3d58a275238b03df7d97623fb1bba",
+          "amount_sat": 65372
         },
         {
-          "from": "5928153547545538",
-          "to": "0cfb301929e8057fe9454a52f82edcaa2d2a1055f670d56cfe0a3ad6f14fcc74",
-          "amount_sat": 135385
+          "from": "7911132560270615",
+          "to": "14a6273be719e3dc60cdfb57f1fef5148905cfabf5b1f6502c8decd70485faeb",
+          "amount_sat": 35777
         },
         {
-          "from": "5928153547545538",
-          "to": "119af0e5aadd59dd7d6d9884edd6de9bc9a5841f168277a14a1b8aa7d8158f33",
-          "amount_sat": 136327
-        },
-        {
-          "from": "5928153547545538",
-          "to": "133b4ec72efeb4d4a2730661ee3f51dea46c3d076eb54a44bda6251300b0a085",
-          "amount_sat": 205223
-        },
-        {
-          "from": "5928153547545538",
+          "from": "7911132560270615",
           "to": "19b71cbc585c4bb150bc34d6e8bac4f21103ebab75abbf3b79d4b2e3db996fc7",
-          "amount_sat": 308750
+          "amount_sat": 521897
         },
         {
-          "from": "5928153547545538",
-          "to": "1cc91479c97d6e5b6029676d0fabe4f65e4761937c0a5207501493263802d929",
-          "amount_sat": 271130
+          "from": "7911132560270615",
+          "to": "1ae82f27c06734532ec0105f76f34c7b225fc4fdeab5224c370f1b22726a924d",
+          "amount_sat": 156208
         },
         {
-          "from": "5928153547545538",
-          "to": "1da5520fbd94035c70ab85c592de307851a65bcebc26c1db39d9c321fab6c785",
-          "amount_sat": 31891
+          "from": "7911132560270615",
+          "to": "1c04ff1e547941d68eab4af02dbbc1ca0dbb3b02fcae456976244d4036362985",
+          "amount_sat": 232871
         },
         {
-          "from": "5928153547545538",
-          "to": "216823c99ec3bb564420798e9cec5605a39b6282f16edab5d6ee1a57d0bd22ad",
-          "amount_sat": 1691287
+          "from": "7911132560270615",
+          "to": "1cc8d18003aab285aee5ed9bebadd7f8dc2aaba73836e43cb119138f03995398",
+          "amount_sat": 486621
         },
         {
-          "from": "5928153547545538",
-          "to": "247287e5eb65db430eec25c228f0115c83e92ee91ec71f7767af79563afc1f4f",
-          "amount_sat": 65311
+          "from": "7911132560270615",
+          "to": "1d81990996778ff2ab16265056bb03cb6a2f3a4fa36f8410045ca4a946cf253d",
+          "amount_sat": 7155567
         },
         {
-          "from": "5928153547545538",
-          "to": "28b63002c91e0dd6aa00ee223a861c5434cb7539161265bb088a65899aec4cad",
-          "amount_sat": 30368
+          "from": "7911132560270615",
+          "to": "1e09be2eb37448af7041512f02e2f6b5cf5c4f52b2f27577f68acbf209b3b0cb",
+          "amount_sat": 2862401
         },
         {
-          "from": "5928153547545538",
-          "to": "2fddd6190f098f8e099e0aa5357505ecdc069228a10d425312b4beb64548063e",
-          "amount_sat": 357587
+          "from": "7911132560270615",
+          "to": "28bcfb66fbc0c760e2897ddac7d0cac86a1f6f6ea2204f50f5e0bc2e595ebbd2",
+          "amount_sat": 196581
         },
         {
-          "from": "5928153547545538",
-          "to": "34e3768ed7237c73b91ad80f0f3fef82e2b4a6086adda8ee56f68cffa915c749",
-          "amount_sat": 128348
+          "from": "7911132560270615",
+          "to": "2d9c07ed01502d89020464cd4bd7c8929a53c4e9f17671b3169e5d6b64c94e80",
+          "amount_sat": 1252748
         },
         {
-          "from": "5928153547545538",
-          "to": "36e3f2311f5c7734425834bc6c7c68f634d9e11e58fa0df8c10533abd932ac29",
-          "amount_sat": 322291
+          "from": "7911132560270615",
+          "to": "2ee771fe387e5250e3df8c060c9d2eafcc0cb3c3001ca5b44ddfe03d592b5fc0",
+          "amount_sat": 1047589
         },
         {
-          "from": "5928153547545538",
-          "to": "3b983ef9c2a8ffcaa41436b78dc1862cfe25db3f28923b4c5130366edabde41e",
-          "amount_sat": 1584044
+          "from": "7911132560270615",
+          "to": "3464047cdc916cc2fb5a1f4b0b5e78e866e0f97a524aa773ee5a4087f6500e42",
+          "amount_sat": 93850132
         },
         {
-          "from": "5928153547545538",
-          "to": "40c70bb4c1750478682a42347e9d8c2d13abf0bea3eacc22c41488017ec51aa9",
-          "amount_sat": 167344
+          "from": "7911132560270615",
+          "to": "3b5704cd368dba28359139e3bf4e8688cd3aa5dc001e55d2b04dd1ff11f2413a",
+          "amount_sat": 220965
         },
         {
-          "from": "5928153547545538",
-          "to": "45baa9d44c126974e29e5589252e6a078cf7734270b6a1c8fc58741e9fa965ea",
-          "amount_sat": 616099
+          "from": "7911132560270615",
+          "to": "3be04f4e9613b45f927af02b3309a85fe079e14a741f54b68114edef7d82bf5f",
+          "amount_sat": 14311
         },
         {
-          "from": "5928153547545538",
-          "to": "494309cc379bb7b39f6b54630453e067ff466bd3914a7623c219c671fbc368d4",
-          "amount_sat": 172163
+          "from": "7911132560270615",
+          "to": "408cd9234f75a30d27027895551de129cfa8f15109327f86b8019cca735625aa",
+          "amount_sat": 135150
         },
         {
-          "from": "5928153547545538",
-          "to": "5a6134cf07478f945dd602acfdc1e994b7db29e23b320b5f6b411a54faf77c1a",
-          "amount_sat": 697796
+          "from": "7911132560270615",
+          "to": "41aa43f5f232870769d2373ec8d8be4d16f11e3cc31c9186980686585e230870",
+          "amount_sat": 372064
         },
         {
-          "from": "5928153547545538",
-          "to": "60e9f8cfc5a23f63975b38fd77e329aa5b85fe04023f58bb72cba8b0194ea746",
-          "amount_sat": 393041
+          "from": "7911132560270615",
+          "to": "42c3ee765c30f395b3c6c62fdb19d579e984b8398663c38c7f24914a3861083b",
+          "amount_sat": 140532
         },
         {
-          "from": "5928153547545538",
-          "to": "62e9e1d808f3b6ff2d7f0efa536566caef69ed24c911485115dcc1825b7d8205",
-          "amount_sat": 26220
+          "from": "7911132560270615",
+          "to": "44d778a2d8e8e3cffe81ecf78dbcae4ad485fa6b323d116903637f4dd9d8ca92",
+          "amount_sat": 365516
         },
         {
-          "from": "5928153547545538",
-          "to": "67624f6f16b67a8ec4fc5bcd9ed0ba4d7577885c7eb5beec69a2610e4cce8a5b",
-          "amount_sat": 18024
+          "from": "7911132560270615",
+          "to": "4b32b55eedc1899d515ae30033d9fdc08cc7b6f04ec8940b742b7580506ac1a1",
+          "amount_sat": 51220
         },
         {
-          "from": "5928153547545538",
-          "to": "7077e4ee7d58579bd8f2e235e4b76a0fb80718a394a787eae7318583cad1d2cd",
-          "amount_sat": 286938
+          "from": "7911132560270615",
+          "to": "4e5388bb97d0df6edefae0f4e645a32bf2ac2e4306d4a06a8ecd517c9b52cf15",
+          "amount_sat": 34654
         },
         {
-          "from": "5928153547545538",
-          "to": "73b57ad0754b1f5cb2f0529f7f2fc7b8a6227e5431df9276dc985332ac1ae263",
-          "amount_sat": 343874
+          "from": "7911132560270615",
+          "to": "5071fe0b043ea23be35cfd204cb7ca20a1eedca31d8f5e6a79cb9389c1f8e0af",
+          "amount_sat": 5000
         },
         {
-          "from": "5928153547545538",
-          "to": "781345c7813359b34b65ce2e1a57df3c7f71ec13561d28f87379a2993de6e47c",
-          "amount_sat": 262854
+          "from": "7911132560270615",
+          "to": "54dec9ec1f893f7d7ea60e58358fd5eedcf965fc9360dfcd2c26bc86e7fc2ad9",
+          "amount_sat": 4436727
         },
         {
-          "from": "5928153547545538",
-          "to": "7b88d7d39b712c53475e6a3236877a91fa4d165e6a71b32673189f55f87ecaf1",
-          "amount_sat": 100060
+          "from": "7911132560270615",
+          "to": "5b1d40ac3d1d8c88ed90da76b371877614036d8bdcbe617b852fd20d27ac5a80",
+          "amount_sat": 198096
         },
         {
-          "from": "5928153547545538",
-          "to": "7d225100afc7965a58b95519d78146e0e54e2f94a85dd6fc9711895c4c5859d4",
-          "amount_sat": 716419
+          "from": "7911132560270615",
+          "to": "63663dbcad12dd23d4c1d2b2f7bdf2975029b68e437dfe8c3f019e3a072c8207",
+          "amount_sat": 1302669
         },
         {
-          "from": "5928153547545538",
-          "to": "83ff6d8802c76972e551b0e1d73e49b9008a1cd091fff0baca626c686c9d6047",
-          "amount_sat": 179226
+          "from": "7911132560270615",
+          "to": "71f9513ed2feef3eff308c20f972d815059aa7a79c46c06701d8beceebb85df4",
+          "amount_sat": 212035
         },
         {
-          "from": "5928153547545538",
-          "to": "84e62371467ba1330380b9ef42fe5269f10ad01d7f76ef4a80b15c22ee1c60a7",
-          "amount_sat": 41235
+          "from": "7911132560270615",
+          "to": "7862e02a7c747bb8990db4619d3edd48e948816e3dd501786e80ef0470f4ff85",
+          "amount_sat": 46925066
         },
         {
-          "from": "5928153547545538",
-          "to": "84e86a7f066edbe01036fddc96d1bb61006ea02b753bdf0dfbfafcd2f834a22f",
-          "amount_sat": 603413
+          "from": "7911132560270615",
+          "to": "7a60a47240649691d522b348bcb64928d625cc0da5abb7e3a806ceb49b3d55be",
+          "amount_sat": 402303
         },
         {
-          "from": "5928153547545538",
-          "to": "864eb310a2e296dcb7b6a55fb438d0ef70ad5eb9bbbe6678e6661e38dd0c7f69",
-          "amount_sat": 143463
+          "from": "7911132560270615",
+          "to": "83b217a92298377520b07ba6db2bab7f5d94c87b009c4b38c75757a86902be6a",
+          "amount_sat": 197923
         },
         {
-          "from": "5928153547545538",
+          "from": "7911132560270615",
+          "to": "85f7cbfc35753fe923833138413971310cdccf43e952500299880bac255e5e6b",
+          "amount_sat": 429497
+        },
+        {
+          "from": "7911132560270615",
+          "to": "89e12eaf533a3454d81750404fb47ee1aeb7da711155def1d4b758cc4ab63e99",
+          "amount_sat": 204855
+        },
+        {
+          "from": "7911132560270615",
+          "to": "8af60f436b0d2146769dc824b61b459a65efcf626f166ea558d562378ee7eed7",
+          "amount_sat": 64411
+        },
+        {
+          "from": "7911132560270615",
+          "to": "8d323352649017d76584d1065d2fbb18e38bebb860fa29087ab7a109e3e89116",
+          "amount_sat": 1257891
+        },
+        {
+          "from": "7911132560270615",
           "to": "8e2ada501c7d3d9512b1ed50d3f5f2e0c2d2945c6e188bec989ead6bba7f1d9e",
-          "amount_sat": 340165
+          "amount_sat": 135830
         },
         {
-          "from": "5928153547545538",
-          "to": "92452661860fada5d475b3de81ddf88c9bb1fe5e9b9ed549c1d3ae0db1defe9b",
-          "amount_sat": 58593
+          "from": "7911132560270615",
+          "to": "91787d61337fe441ee7f0d2a353b7ead1c9187453104e6f52ec556e055a1a167",
+          "amount_sat": 542408
         },
         {
-          "from": "5928153547545538",
-          "to": "9412fbc093a64e6a54af4cf6da0f105b47f348aae51d84855c490b26839b2e2f",
-          "amount_sat": 35866
+          "from": "7911132560270615",
+          "to": "94268e01b27244eb9f1bf9d79c0e90116d22b3b637ed014f467fb0a11e01f07b",
+          "amount_sat": 1218143
         },
         {
-          "from": "5928153547545538",
-          "to": "96cd687f75bb69ba116044eb80bcdaf01c24bcaee305ef18d096d97ceb9af7df",
-          "amount_sat": 6677
+          "from": "7911132560270615",
+          "to": "9da0e7c73018a8099afe4d7c9be284a15a7dc1513486d3e7dc2f4e050bba7b3e",
+          "amount_sat": 46925066
         },
         {
-          "from": "5928153547545538",
-          "to": "991b2f565bfc0471fa6df1f01c164b6702be0d7970a56240f0cace80a012234d",
-          "amount_sat": 1970557
+          "from": "7911132560270615",
+          "to": "9f707facfd21721980f5f7a4d783e0e27558a26c3deb307d3450616753183023",
+          "amount_sat": 715671
         },
         {
-          "from": "5928153547545538",
-          "to": "9937020df4184dc2739f2ad3934f0ae609e6a4c2473f2222eca986d59d1f63cb",
-          "amount_sat": 22952
+          "from": "7911132560270615",
+          "to": "a15772ef2f89b5e7699312e0888d66529d6d45ddc5d1076c3d2fa0fbb5c002bb",
+          "amount_sat": 93200
         },
         {
-          "from": "5928153547545538",
-          "to": "9976ec683d2d2aa914a9c1a1e84d1f34c7b0226d15afa1dacb54f9be1f7e4276",
-          "amount_sat": 837385
+          "from": "7911132560270615",
+          "to": "aa732a4a94f640e82c006bf8055d9675c56fb3d61b466887345a72239f5b46eb",
+          "amount_sat": 35808
         },
         {
-          "from": "5928153547545538",
-          "to": "9b8846f5098efa039d7d8ee55e1b3e3a9d506a62a31883e9fc1fadd7de282ca9",
-          "amount_sat": 212070
+          "from": "7911132560270615",
+          "to": "b1481f1204eb209f63621f93cd86c9e50bc71b5fee7a87689bd757dd37d025dc",
+          "amount_sat": 42950
         },
         {
-          "from": "5928153547545538",
-          "to": "a06e85aca45df1a64373269235d43b1f8f585dcecabef183dad237fe4538a3b5",
-          "amount_sat": 135172
+          "from": "7911132560270615",
+          "to": "b22bcd148d8cfa466301888ebb1c8771e3e5993f7ec03457fce7d5430358b0ee",
+          "amount_sat": 86091
         },
         {
-          "from": "5928153547545538",
-          "to": "a648c7759cf25b016300dcb234b93821625d55f4891b6019de71421332b6a0f8",
-          "amount_sat": 127751
+          "from": "7911132560270615",
+          "to": "b469038fdca8cf02eb9c505c9f34ddf68ef5c4e8164c081f7d54024246dd0a00",
+          "amount_sat": 154627
         },
         {
-          "from": "5928153547545538",
-          "to": "a64be212ff75459a2df053b09fe412cae2c0451b9c157e8d296eab80b749131f",
-          "amount_sat": 208819
+          "from": "7911132560270615",
+          "to": "b86695f63e2c537520f2c49aec99751be67b49a1f31ae6b4c70acabf2047d15b",
+          "amount_sat": 44455
         },
         {
-          "from": "5928153547545538",
-          "to": "a97a71204a3528303eb6f58abf2655ac33f908ef86a1f971bc34dcdabe59f8f9",
-          "amount_sat": 482524
+          "from": "7911132560270615",
+          "to": "bb2d57ca72daf8c940e3b5c74ee060134610caa1820b3c412bcac70748cd06a3",
+          "amount_sat": 2814003
         },
         {
-          "from": "5928153547545538",
-          "to": "a9b4496062a71ce22bbbc49749d47411881aaf019dc65a10acbba1f22f59819a",
-          "amount_sat": 531546
+          "from": "7911132560270615",
+          "to": "c043af571245f1ef395531b025d20e475e517a34d3154873503bd9a7d3b9b013",
+          "amount_sat": 239853
         },
         {
-          "from": "5928153547545538",
-          "to": "aa49ea3cc488a52253d1d3130865b5b29052f13679ac6f8690b99b9914897c5b",
-          "amount_sat": 108210
+          "from": "7911132560270615",
+          "to": "c06fa91beb023c560b819b9df34a205ba1df7631258b0dc451ad107233407011",
+          "amount_sat": 71584
         },
         {
-          "from": "5928153547545538",
-          "to": "b9442b505ca9b8f3d71b46fc80406ebcc8aa60dec55f3a5b9c0ce6e5f9dc21b6",
-          "amount_sat": 14346
-        },
-        {
-          "from": "5928153547545538",
-          "to": "be208a9d35ccab8d4d4338aa8900fa2df74c08853fa56f1667e9add2b3e8ec52",
-          "amount_sat": 50161
-        },
-        {
-          "from": "5928153547545538",
+          "from": "7911132560270615",
           "to": "c0d7b4400a3e90897c585fdbb04ab5377718b67754601f3c5b6b0e63230ba02b",
-          "amount_sat": 64523
+          "amount_sat": 30345
         },
         {
-          "from": "5928153547545538",
-          "to": "c6ce4aa1b679e38e71611f4738fd950b67b29ad24fa54ccd838c0478857e56bb",
-          "amount_sat": 1147100
+          "from": "7911132560270615",
+          "to": "c2b4b5e7bf2eb5dd39a5113f36ddfbe7c147dd28e8b61d8059b50aadd55e2ae2",
+          "amount_sat": 422439
         },
         {
-          "from": "5928153547545538",
-          "to": "cd98ae58c9c74365130501cedf9f594cee5d3c6cf473a5f569e1adfbd4ff6213",
-          "amount_sat": 146429
+          "from": "7911132560270615",
+          "to": "c352bfda91c3b3cb96bfa6280307cedc3546f4be7824d533ad65a42b616ad684",
+          "amount_sat": 329517
         },
         {
-          "from": "5928153547545538",
-          "to": "cfc9262045f599dd3c8ce4a1eae68f708c81894f86263d37be8a3a3e342d96aa",
-          "amount_sat": 4484177
+          "from": "7911132560270615",
+          "to": "d816911a749365284d8be6d749be0a032b208b74bf8dfe99e16bacc296964733",
+          "amount_sat": 553837
         },
         {
-          "from": "5928153547545538",
-          "to": "d181b3946e0a324372141c57ca68a7c84990344548fc3d6fb912f43ad98f3acf",
-          "amount_sat": 728631
+          "from": "7911132560270615",
+          "to": "dddfd2096947a4a29c010bf6f8fd8e56aa742a1140afaed128fde9cc75f9bdb1",
+          "amount_sat": 296360
         },
         {
-          "from": "5928153547545538",
-          "to": "d72270252f67232438a5b217d28d4cb797717ab11b7384c9b9e9f64d39d3163c",
-          "amount_sat": 35867
+          "from": "7911132560270615",
+          "to": "de6fefa68a4a59040ed9e6c002ec3b663b94c4bacfd28679c48ba6d75fd05714",
+          "amount_sat": 163068
         },
         {
-          "from": "5928153547545538",
-          "to": "db7030b7cf4f04f7bc5acd402520632c7c265cb9b9862b3998e3b9f2ef33874f",
-          "amount_sat": 236726
+          "from": "7911132560270615",
+          "to": "e47f4bf73d53b92fe0adcc7e59103cdd330ac37655b80e26c68ef8d3f8a1d566",
+          "amount_sat": 710992
         },
         {
-          "from": "5928153547545538",
-          "to": "df4717f3c656619f635fba94fdfb640f83dd1e825785a477067af103da205670",
-          "amount_sat": 286130
+          "from": "7911132560270615",
+          "to": "ecc92ac31b578181220061cd0decd8dee5a565125aacaa3f511da5eab9d18111",
+          "amount_sat": 4293646
         },
         {
-          "from": "5928153547545538",
-          "to": "e0080f4587de569f2e837e2e46693050b17981ba81b2bb18a9acdcd2e57228a8",
-          "amount_sat": 35818
+          "from": "7911132560270615",
+          "to": "ef9b2c6131c7a461f0a14951952dee8db7b02e4b54d70d1e888f2958565e0f36",
+          "amount_sat": 315046
         },
         {
-          "from": "5928153547545538",
-          "to": "e0da3813cf1276d0be7f4e9c7ffc00fe222d6a661b046a4b096eb83cdeb349ab",
-          "amount_sat": 37346
+          "from": "7911132560270615",
+          "to": "f75033a6e64928c3222136a5ddfb9d4d84c9da0b9ff014d9fe32d427d988e602",
+          "amount_sat": 1406970
         },
         {
-          "from": "5928153547545538",
-          "to": "e599853f46ab21e5472eed51b2abb150b2c5a49701000e9f26fde870aab5a3d7",
-          "amount_sat": 525891
+          "from": "7911132560270615",
+          "to": "f9adef8cc526caeb1e7021b909ff3d18cbe85768abc1e50ac50068e009483225",
+          "amount_sat": 204894
         },
         {
-          "from": "5928153547545538",
-          "to": "eb0a8e8be1e78c133a424d4a4f500d9b2dcb9cccb4f8c94b29ccbdeb60e97a4d",
-          "amount_sat": 366488
+          "from": "7911132560270615",
+          "to": "fd4993aba145000df3bc2ffd8988b68ffb5ecfb4970ab529fdc68db040663121",
+          "amount_sat": 14318
         },
         {
-          "from": "5928153547545538",
-          "to": "f2da8015e45d8663d0b27da88d0f5ea41dba5790fef8beeb9d94f417699879ff",
-          "amount_sat": 310930
-        },
-        {
-          "from": "5928153547545538",
-          "to": "f81b48f229c3823ea4e7192811665475a4d8c46c94255685368407099acdcce2",
-          "amount_sat": 179661
-        },
-        {
-          "from": "5928153547545538",
-          "to": "fc75ad2c5fa58a74d0548be8e60beb2a70d2fd0d87ddbd6f9de4636b2048808a",
-          "amount_sat": 210791
-        },
-        {
-          "from": "5928153547545538",
-          "to": "fde43a25afc317ff88e3db3833cf34080092eb6fcfc36aa0a6d9aaaa52cd0c7d",
-          "amount_sat": 2157256
+          "from": "7911132560270615",
+          "to": "fe2fc4668845d79ea8fb6fc8057aec1f7f3969d115b8b534199c02973f28cff6",
+          "amount_sat": 697459
         }
       ],
-      "total_edges_available": 63
+      "total_edges_available": 60
     }
   },
   "top_gather_scatter": {
     "kind": "gather_scatter",
-    "metric_value": 150,
-    "center_txid": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
+    "metric_value": 40,
+    "center_txid": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
     "metric_detail": "hub_score_fan_in_times_fan_out",
     "subgraph": {
       "nodes": [
         {
-          "txid": "1097563978404276",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 115358572
+          "txid": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "fan_in": 4,
+          "fan_out": 10,
+          "in_sats": 5847,
+          "out_sats": 4840
         },
         {
-          "txid": "118761826637646",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 5393294
-        },
-        {
-          "txid": "1212763964757284",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 658928
-        },
-        {
-          "txid": "1435058824816391",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 370000
-        },
-        {
-          "txid": "157061022329063",
-          "fan_in": 0,
-          "fan_out": 7,
-          "in_sats": 0,
-          "out_sats": 116462038
-        },
-        {
-          "txid": "171746117936807",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 35413921
-        },
-        {
-          "txid": "1718816364011319",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 21275268
-        },
-        {
-          "txid": "1977299151372620",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 6363600
-        },
-        {
-          "txid": "2009637173589462",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 23316569
-        },
-        {
-          "txid": "2050309294537073",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 96698709
-        },
-        {
-          "txid": "2332616146994909",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 89366
-        },
-        {
-          "txid": "2382915815775284",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 2119489
-        },
-        {
-          "txid": "2505790829413223",
-          "fan_in": 0,
-          "fan_out": 7,
-          "in_sats": 0,
-          "out_sats": 95236667
-        },
-        {
-          "txid": "3075704474736204",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 351072
-        },
-        {
-          "txid": "3244631113280451",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 757588276
-        },
-        {
-          "txid": "3691720333243273",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 23725108
-        },
-        {
-          "txid": "388537439989760",
-          "fan_in": 0,
-          "fan_out": 8,
-          "in_sats": 0,
-          "out_sats": 37249136
-        },
-        {
-          "txid": "3951572351689502",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 32768
-        },
-        {
-          "txid": "401678281069985",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 7341360
-        },
-        {
-          "txid": "4020554262205088",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 34712726
-        },
-        {
-          "txid": "4144237429188274",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 1710020
-        },
-        {
-          "txid": "4150527850779689",
-          "fan_in": 0,
-          "fan_out": 7,
-          "in_sats": 0,
-          "out_sats": 1611626846
-        },
-        {
-          "txid": "4346311970692588",
-          "fan_in": 0,
-          "fan_out": 9,
-          "in_sats": 0,
-          "out_sats": 869024016
-        },
-        {
-          "txid": "4371719524468763",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 157224
-        },
-        {
-          "txid": "4498823149798762",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 16802687
-        },
-        {
-          "txid": "4504315494456988",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 13320943
-        },
-        {
-          "txid": "4597793242815513",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 289420
-        },
-        {
-          "txid": "4648769661920932",
-          "fan_in": 0,
-          "fan_out": 7,
-          "in_sats": 0,
-          "out_sats": 329041687
-        },
-        {
-          "txid": "4657692648347615",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 243752072
-        },
-        {
-          "txid": "4785328277086631",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 276112
-        },
-        {
-          "txid": "48268f38d5628b30db6928ea22ff9f18845591e05a32c7d7c570ef5caa069574",
+          "txid": "2d920cdf7c338ffd831cbbaba99d68af1f5926968f491edbc24d81d1d1f3c72e",
           "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 298528,
+          "in_sats": 484,
           "out_sats": 0
         },
         {
-          "txid": "4867662345982851",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 1191153
-        },
-        {
-          "txid": "4997654580175920",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 1102850
-        },
-        {
-          "txid": "5055156169842473",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 300000
-        },
-        {
-          "txid": "5056176898699481",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 6545856
-        },
-        {
-          "txid": "5281503927558665",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 1210762
-        },
-        {
-          "txid": "5311156940716821",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 3799957
-        },
-        {
-          "txid": "5556292281948095",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 7245456
-        },
-        {
-          "txid": "5586545141711536",
-          "fan_in": 0,
-          "fan_out": 7,
-          "in_sats": 0,
-          "out_sats": 1325255491
-        },
-        {
-          "txid": "5643210690280203",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 1801731
-        },
-        {
-          "txid": "5902957198291516",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 29126538
-        },
-        {
-          "txid": "6390968124657791",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 806892
-        },
-        {
-          "txid": "6471145851370580",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 790670
-        },
-        {
-          "txid": "6587090632860415",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 524288
-        },
-        {
-          "txid": "6684062902576229",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 20810388
-        },
-        {
-          "txid": "6787830532399535",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 141999
-        },
-        {
-          "txid": "6791705174828402",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 1270000
-        },
-        {
-          "txid": "6994575695526897",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 275536
-        },
-        {
-          "txid": "7042756945017261",
-          "fan_in": 0,
-          "fan_out": 3,
-          "in_sats": 0,
-          "out_sats": 226384
-        },
-        {
-          "txid": "7302911615820736",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 120000
-        },
-        {
-          "txid": "742812143636886",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 19669996
-        },
-        {
-          "txid": "7476630423922383",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 840032
-        },
-        {
-          "txid": "7534413644767566",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 147582
-        },
-        {
-          "txid": "7598212221827775",
-          "fan_in": 0,
-          "fan_out": 6,
-          "in_sats": 0,
-          "out_sats": 53490525
-        },
-        {
-          "txid": "7993202042370336",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 2110274
-        },
-        {
-          "txid": "8229075734400142",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 7590998
-        },
-        {
-          "txid": "8338169790241375",
-          "fan_in": 0,
-          "fan_out": 5,
-          "in_sats": 0,
-          "out_sats": 58414504
-        },
-        {
-          "txid": "837035183379452",
-          "fan_in": 0,
-          "fan_out": 7,
-          "in_sats": 0,
-          "out_sats": 16735439
-        },
-        {
-          "txid": "8476442037004267",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 9585632
-        },
-        {
-          "txid": "8506785767340891",
-          "fan_in": 0,
-          "fan_out": 1,
-          "in_sats": 0,
-          "out_sats": 100000
-        },
-        {
-          "txid": "8719184373370961",
-          "fan_in": 0,
-          "fan_out": 4,
-          "in_sats": 0,
-          "out_sats": 7158106
-        },
-        {
-          "txid": "8804356745480989",
-          "fan_in": 0,
-          "fan_out": 2,
-          "in_sats": 0,
-          "out_sats": 91044
-        },
-        {
-          "txid": "950585523979144",
-          "fan_in": 0,
-          "fan_out": 7,
-          "in_sats": 0,
-          "out_sats": 355688078
-        },
-        {
-          "txid": "b91baefe7a8c88c5b0ab26f223ca007493e03811775c4cf9e12c545a3917b144",
-          "fan_in": 2,
+          "txid": "326fa2261180cf2fe991e1ed49c6dc1427d22755e89c042dbc780fbf18f94b63",
+          "fan_in": 1,
           "fan_out": 0,
-          "in_sats": 1693954,
+          "in_sats": 484,
           "out_sats": 0
         },
         {
-          "txid": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "fan_in": 75,
-          "fan_out": 2,
-          "in_sats": 731177869,
-          "out_sats": 864064
+          "txid": "3e8b9f3c6770cb22a6c9897aae77c12dbad117ba187843ba61c8b37e53a48693",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
+        },
+        {
+          "txid": "4116105857074416",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 1200
+        },
+        {
+          "txid": "4d483e3ba444d77cc9501d61dfce2c9209014d20aca61bd50f2cbafc99b3a7f5",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
+        },
+        {
+          "txid": "50265e492f6ccb186403c879940cee2c2cfa73a16fde9aff2574192f69eeb127",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
+        },
+        {
+          "txid": "57516844995209",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 1200
+        },
+        {
+          "txid": "5938b697afb2eaa5af6cbace629fc59898c471ace7247e51f1898d8c3291a07c",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
+        },
+        {
+          "txid": "6209144888511037",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 1200
+        },
+        {
+          "txid": "8736870636140873",
+          "fan_in": 0,
+          "fan_out": 1,
+          "in_sats": 0,
+          "out_sats": 2247
+        },
+        {
+          "txid": "ad5530fbd41ae02faafd051531893185030df8de062065a72038a0df7c622975",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
+        },
+        {
+          "txid": "d9f481d55e5d76c2f55c09464893a36974e5b25e9c16fb5994ba15c6ce60fc32",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
+        },
+        {
+          "txid": "dd5fc833203b10c141df9ffc754d3607a48a92d89d7d222b3597eb8ee6e72183",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
+        },
+        {
+          "txid": "f274b97302a7e131c5172d61cdfad39ad1f64415459c41ca7a449c539fb405da",
+          "fan_in": 1,
+          "fan_out": 0,
+          "in_sats": 484,
+          "out_sats": 0
         }
       ],
       "edges": [
         {
-          "from": "1097563978404276",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 13325391
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "2d920cdf7c338ffd831cbbaba99d68af1f5926968f491edbc24d81d1d1f3c72e",
+          "amount_sat": 484
         },
         {
-          "from": "118761826637646",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 5393294
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "326fa2261180cf2fe991e1ed49c6dc1427d22755e89c042dbc780fbf18f94b63",
+          "amount_sat": 484
         },
         {
-          "from": "1212763964757284",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 531441
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "3e8b9f3c6770cb22a6c9897aae77c12dbad117ba187843ba61c8b37e53a48693",
+          "amount_sat": 484
         },
         {
-          "from": "1435058824816391",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 100000
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "4d483e3ba444d77cc9501d61dfce2c9209014d20aca61bd50f2cbafc99b3a7f5",
+          "amount_sat": 484
         },
         {
-          "from": "157061022329063",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 570807
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "50265e492f6ccb186403c879940cee2c2cfa73a16fde9aff2574192f69eeb127",
+          "amount_sat": 484
         },
         {
-          "from": "171746117936807",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 29353279
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "5938b697afb2eaa5af6cbace629fc59898c471ace7247e51f1898d8c3291a07c",
+          "amount_sat": 484
         },
         {
-          "from": "1718816364011319",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 1062882
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "ad5530fbd41ae02faafd051531893185030df8de062065a72038a0df7c622975",
+          "amount_sat": 484
         },
         {
-          "from": "1977299151372620",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 6363600
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "d9f481d55e5d76c2f55c09464893a36974e5b25e9c16fb5994ba15c6ce60fc32",
+          "amount_sat": 484
         },
         {
-          "from": "2009637173589462",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 2117152
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "dd5fc833203b10c141df9ffc754d3607a48a92d89d7d222b3597eb8ee6e72183",
+          "amount_sat": 484
         },
         {
-          "from": "2050309294537073",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 531441
+          "from": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "to": "f274b97302a7e131c5172d61cdfad39ad1f64415459c41ca7a449c539fb405da",
+          "amount_sat": 484
         },
         {
-          "from": "2332616146994909",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 50000
+          "from": "4116105857074416",
+          "to": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "amount_sat": 1200
         },
         {
-          "from": "2382915815775284",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 2097152
+          "from": "57516844995209",
+          "to": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "amount_sat": 1200
         },
         {
-          "from": "2505790829413223",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 5000000
+          "from": "6209144888511037",
+          "to": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "amount_sat": 1200
         },
         {
-          "from": "3075704474736204",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 200000
-        },
-        {
-          "from": "3244631113280451",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 13892306
-        },
-        {
-          "from": "3691720333243273",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 100000
-        },
-        {
-          "from": "388537439989760",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 299394
-        },
-        {
-          "from": "3951572351689502",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 32768
-        },
-        {
-          "from": "401678281069985",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 262144
-        },
-        {
-          "from": "4020554262205088",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 28697814
-        },
-        {
-          "from": "4144237429188274",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 1062882
-        },
-        {
-          "from": "4150527850779689",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 388745515
-        },
-        {
-          "from": "4346311970692588",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 4815737
-        },
-        {
-          "from": "4371719524468763",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 118098
-        },
-        {
-          "from": "4498823149798762",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 16777216
-        },
-        {
-          "from": "4504315494456988",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 13320943
-        },
-        {
-          "from": "4597793242815513",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 282120
-        },
-        {
-          "from": "4648769661920932",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 541441
-        },
-        {
-          "from": "4657692648347615",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 75536
-        },
-        {
-          "from": "4785328277086631",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 32768
-        },
-        {
-          "from": "4867662345982851",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 531441
-        },
-        {
-          "from": "4997654580175920",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 1102850
-        },
-        {
-          "from": "5055156169842473",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 200000
-        },
-        {
-          "from": "5056176898699481",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 65536
-        },
-        {
-          "from": "5281503927558665",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 65536
-        },
-        {
-          "from": "5311156940716821",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 118098
-        },
-        {
-          "from": "5556292281948095",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 2097152
-        },
-        {
-          "from": "5586545141711536",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 33697814
-        },
-        {
-          "from": "5643210690280203",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 1417176
-        },
-        {
-          "from": "5902957198291516",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 20000000
-        },
-        {
-          "from": "6390968124657791",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 354294
-        },
-        {
-          "from": "6471145851370580",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 790670
-        },
-        {
-          "from": "6587090632860415",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 524288
-        },
-        {
-          "from": "6684062902576229",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 4782969
-        },
-        {
-          "from": "6787830532399535",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 141999
-        },
-        {
-          "from": "6791705174828402",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 1270000
-        },
-        {
-          "from": "6994575695526897",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 200000
-        },
-        {
-          "from": "7042756945017261",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 200000
-        },
-        {
-          "from": "7302911615820736",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 100000
-        },
-        {
-          "from": "742812143636886",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 1062882
-        },
-        {
-          "from": "7476630423922383",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 840032
-        },
-        {
-          "from": "7534413644767566",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 118098
-        },
-        {
-          "from": "7598212221827775",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 1364392
-        },
-        {
-          "from": "7993202042370336",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 2097152
-        },
-        {
-          "from": "8229075734400142",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 200000
-        },
-        {
-          "from": "8338169790241375",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 28697814
-        },
-        {
-          "from": "837035183379452",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 10262144
-        },
-        {
-          "from": "8476442037004267",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 9565938
-        },
-        {
-          "from": "8506785767340891",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 100000
-        },
-        {
-          "from": "8719184373370961",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 5000000
-        },
-        {
-          "from": "8804356745480989",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 65536
-        },
-        {
-          "from": "950585523979144",
-          "to": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "amount_sat": 68171746
-        },
-        {
-          "from": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "to": "48268f38d5628b30db6928ea22ff9f18845591e05a32c7d7c570ef5caa069574",
-          "amount_sat": 298528
-        },
-        {
-          "from": "d08f4faa3d6a77cd45abcf273259afe86f31e96f57f162aedb5af6e433659c4a",
-          "to": "b91baefe7a8c88c5b0ab26f223ca007493e03811775c4cf9e12c545a3917b144",
-          "amount_sat": 565536
+          "from": "8736870636140873",
+          "to": "0604f32981ff1dfd6253d4f559a960979aeac2642eeec5b9cfa5fcd1f5c2466a",
+          "amount_sat": 2247
         }
       ],
-      "edges_truncated": true,
-      "total_edges_available": 77
+      "total_edges_available": 14
     }
   },
   "longest_hop_path": {
